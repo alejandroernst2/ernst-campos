@@ -153,6 +153,7 @@ header{
 	
 
 }
+
 .TextTopSectionIndex{
 	font-family: 'Bodoni Moda', serif;
 	font-family: 'Newsreader', serif;
@@ -168,6 +169,7 @@ header{
 }
 
 
+
 .SecondSectionIndex{
 	min-height: 87vh;	
 	display: flex;
@@ -181,36 +183,40 @@ header{
 
 }
 
+
 /*Lo siguiente corresponde a ambos articles de la trayectoria*/
 .ArticleSecSectInd{
 	/*Esta clase corresponde a ambos articles que se 
 	encuentran dentro de la second section del index*/
 	
 	box-sizing: border-box;
-	color: #f6fff6cc;
-	background-color: #58AB2BCC;
+
+	color:#2D882D;
+	background-color: #f6fff6cc;
 	
 
-	border-radius: 30px;
-	border: 5px solid #58AB2BCC;
+	border-radius: 10px;
+	
 
 	margin: 7vh;
 	padding: 3vw;
 
 	min-width: 30rem;
-	max-width: 35rem;
+	max-width: 33rem;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	transition: max-width .5s;
 
 }
-
 .ArticleSecSectInd:hover{
 
-	border: 5px solid  #C13038;
+	max-width: 35rem;
 
-}
+	}
+
+
 .h2SectionIndex{
 	display: flex;
 	flex-direction: row;
@@ -226,6 +232,26 @@ header{
 	justify-content: center;
 	text-align:justify;
 }
+
+@media screen and (max-width: 450px){
+	.TextTopSectionIndex{
+		font-size: 4vh;
+		top: 85vh;
+		height: auto;}
+	
+	.ArticleSecSectInd{
+		min-width: 70%;
+		padding: 5vw;
+		
+		
+	}
+	.PSecSectIndex{
+	text-align: center;
+	font-size: 15px;
+	}
+	
+}
+
 
 /*Lo siguiente corresponde al Article Objetivos*/
 .ArticleObjetivosIndex{}

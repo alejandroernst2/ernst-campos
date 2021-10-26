@@ -20,7 +20,9 @@ body{
 ---------ASIGNANDO ESTILOS AL HEADER------------
 ----------------------------------------------*/
 
-
+header{
+	z-index: 2;
+}
 
 .PosicionHeader{
 	position: fixed;
@@ -36,7 +38,7 @@ body{
 .navbar{
 	
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 900px){
 	.nav{
 		display: none;
 		width: 100vw;
@@ -45,7 +47,7 @@ body{
 	}
 
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 900px){
 	.navbar{
 		display: none;
 		width: 100vw;
@@ -85,22 +87,29 @@ body{
 	
 	width: 100vw;
 	background-color:#2D882D ;
+}.navbar-light .navbar-nav .nav-link{
+	color: #f6fff6;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #bbbbbb;
+}
+.navbar-light .navbar-nav .nav-link.active{
+	color: #bbbbbb;
 }
 
+.navbar-light .navbar-brand {
+	color: #f6fff6;
+}
 
-
-
-
+.navbar-light .navbar-brand:hover {
+	color: #cccccc;
+}
 /*----------------------------------------------
 --------DIVISIÓN DEL HEADER Y EL MAIN-----------
 ----------------------------------------------*/
 /*
 ----------ESTILOS  COMPARTIDOS---------------
 */
-
-.MainGeneral{
-
-}
 
 .WhatsappLogo{
 	display: inline;
@@ -136,10 +145,26 @@ body{
 
 .ImagenTopSection{
 	
+
 	margin-bottom: -3vh;
-	width: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	overflow: cover;
 	
 
+}
+.TextTopSectionIndex{
+	font-family: 'Bodoni Moda', serif;
+	font-family: 'Newsreader', serif;
+	font-size: 7vh;
+	position: absolute;
+	top: 80vh;
+	left: 8vw;
+	color: #2D882D;
+	background-color: #f6fff6bb;
+	border-radius:20px ;
+	padding: 20px;;
+	
 }
 
 

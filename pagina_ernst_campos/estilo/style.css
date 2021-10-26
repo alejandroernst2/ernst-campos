@@ -1,0 +1,502 @@
+
+body{
+		background-color: #f6fff6;
+		font-family: 'Lato', sans-serif;
+			color: #2D882D;
+}
+
+*{
+	/* Esto sería el normalize de los navegadores*/
+
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+	line-height: 2;
+	letter-spacing: 2px;
+	
+}
+
+/*----------------------------------------------
+---------ASIGNANDO ESTILOS AL HEADER------------
+----------------------------------------------*/
+
+
+
+.PosicionHeader{
+	position: fixed;
+	background-color: #f6fff6;
+	text-align: center;
+
+
+}
+.h1LogoImg{
+	max-width: 200px;
+	background-color: #f6fff6;
+}
+.navbar{
+	
+}
+@media screen and (max-width: 1024px){
+	.nav{
+		display: none;
+		width: 100vw;
+		background-color:#2D882D;
+	
+	}
+
+}
+@media screen and (min-width: 1024px){
+	.navbar{
+		display: none;
+		width: 100vw;
+		background-color:#2D882D ;
+	}
+
+}
+
+.UlNav{
+	background-color: #2D882D;
+	width: 100vw;
+	margin: 0;
+}
+.LiNav{
+	display: inline-block;
+	list-style: none;
+
+	width: 30vw;
+}
+
+.LiNavA:hover{
+	background-color: #f6fff6;
+	color: #2D882D;
+	border: 5px solid  #C13038;
+	border-radius:2vw;
+	text-decoration: none;
+}
+
+.LiNavA{
+	display:block;
+	border: 5px solid #2D882D;
+	text-decoration: none;
+	color: #f6fff6;
+	/*este display es para que el <a> ocupe todo el <Li>*/
+}
+.navbar{
+	
+	width: 100vw;
+	background-color:#2D882D ;
+}
+
+
+
+
+
+/*----------------------------------------------
+--------DIVISIÓN DEL HEADER Y EL MAIN-----------
+----------------------------------------------*/
+/*
+----------ESTILOS  COMPARTIDOS---------------
+*/
+
+.MainGeneral{
+
+}
+
+.WhatsappLogo{
+	display: inline;
+    position: sticky;
+    top: 90vh;
+    left: 95vw;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: right;
+
+}
+.ImgLogoWpp{
+	height: 5vh;
+	
+}
+
+.ImgLogoWpp:hover{
+		 transform:rotatex(20deg);
+}
+
+/*
+------------ESTILO DEL INDEX-----------------
+*/
+.MainIndex{
+
+}
+
+.IndexTopSection{
+	max-height: 100vh;
+	overflow: hidden;
+
+}
+
+.ImagenTopSection{
+	
+	margin-bottom: -3vh;
+	width: 100%;
+	
+
+}
+
+
+.SecondSectionIndex{
+	min-height: 87vh;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	background-image: url(../imagenes/FotoGanado.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+
+/*Lo siguiente corresponde a ambos articles de la trayectoria*/
+.ArticleSecSectInd{
+	/*Esta clase corresponde a ambos articles que se 
+	encuentran dentro de la second section del index*/
+	
+	box-sizing: border-box;
+	color: #f6fff6cc;
+	background-color: #58AB2BCC;
+	
+
+	border-radius: 30px;
+	border: 5px solid #58AB2BCC;
+
+	margin: 7vh;
+	padding: 3vw;
+
+	min-width: 30rem;
+	max-width: 35rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.ArticleSecSectInd:hover{
+
+	border: 5px solid  #C13038;
+
+}
+.h2SectionIndex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+			text-align:center;
+		font-size: 2rem;
+
+}
+
+.PSecSectIndex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align:justify;
+}
+
+/*Lo siguiente corresponde al Article Objetivos*/
+.ArticleObjetivosIndex{}
+
+.h2SectionObjetivos{}
+
+.PSectionObjetivos{}
+
+/*Lo siguiente corresponde al Article Trayectoria*/
+.ArticleTratectoriaIndex{}
+
+.h2SectionTrayectoria{}
+
+.PSectionTrayectoria{}
+
+/*Lo siguiente corresponde al article y section La Empresa*/
+.ThirdSectionIndex{
+	
+
+}
+
+.ArticleThirdSecIndex{
+	margin: 10vh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-auto-rows: 1fr 2fr 1fr 5fr;
+	grid-template-areas:
+	"h2TSI"
+	"p1TSI"
+	"p2TSI"
+	"olTSI";
+}
+
+.h2ThirdSecIndex{
+	grid-area:h2TSI;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	text-align:center;
+	font-size: 2rem;
+}
+.pThirdSecIndex{}
+
+.p1ThirdSecIndex{
+	grid-area: p1TSI;
+}
+.p2ThirdSecIndex{
+	grid-area: p2TSI;
+}
+.OlThirdSecIndex{
+	grid-area: olTSI;
+	padding-left: 1rem;
+}
+/*Lo siguiente corresponde al article y section Servicios Brindados*/
+.FourthSecIndex{
+		padding: 5vh;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		text-align:center;
+		background-color:  #dddddd
+}
+
+.ServiciosBrindados{
+		text-align:center;
+		font-size: 2rem;
+}
+
+.UlServiciosBrindados{
+		list-style-type: none;
+}
+.Clientes{
+		text-align:center;
+		font-size: 2rem;
+}
+.UlClientes{
+		list-style-type: none;
+		margin-bottom: 5vh;
+}
+
+
+
+/*
+------------ESTILO DE CONTACTO---------------
+*/
+
+.BodyContacto{
+	
+}
+
+.MainContacto{
+	min-height: 80vh;
+	padding-top: 10vh;
+	background-image: url(../imagenes/background-image_contacto.jpg);
+	background-repeat: no-repeat;
+	background-width:100vw;
+}
+.SectionForm{
+	
+}
+.Form{	
+	
+	margin: auto;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+	padding-bottom: 10vh;
+}
+
+.FieldsetContacto{
+	border-color: #58AB2B;
+	background-color: #f6fff6cc;
+	
+	min-width: 60vw !important ;
+	overflow: auto;
+
+}
+
+.FormFieldsetDivContacto{
+	
+	min-height: 70vh;
+	
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows:repeat(3,1fr)  0.5fr 2fr 0.5fr 0.5fr;
+	grid-template-areas: 
+	"TituloFormulario TituloFormulario TituloFormulario"
+	"InputEmail InputEmail InputEmail"
+	"InputNombre InputApellido InputTelefono"
+	"InputProvincia InputProvincia InputProvincia"
+	"InputComentarios InputComentarios InputComentarios"
+	"InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones"
+	"InputButtons InputButtons InputButtons" ;
+}
+
+.DivTituloFormulario{
+	grid-area:TituloFormulario;
+	margin:0.2rem;
+
+}
+.TituloFormulario{
+	text-align: center;
+}
+
+.DivInputEmail{
+	grid-area:InputEmail;
+	margin:0.2rem;
+}
+.InputEmail{
+	width: 100%;
+}
+
+.DivInputNombre{
+	grid-area:InputNombre;
+	margin:0.2rem;
+}
+
+.DivInputApellido{
+	grid-area:InputApellido;
+	margin:0.2rem;
+}
+
+.DivInputTelefono{
+	grid-area:InputTelefono;
+	margin:0.2rem;
+}
+	
+.DivInputProvincia{
+	grid-area:InputProvincia;
+	margin:0.2rem;
+}
+
+.DivInputComentarios{
+	grid-area:InputComentarios;
+	margin:0.2rem;
+}
+.InputComentarios{
+	width: 90%;
+	min-height: 15vh;
+}
+
+.DivInputTerminosYCondiciones{
+	grid-area:InputTerminosYCondiciones;
+	margin:0.2rem;
+}
+
+.DivInputButtons{
+	grid-area:InputButtons;
+	margin:0.2rem;
+}
+.DivInputButtons:hover{
+	color: palevioletred;
+}
+
+
+
+
+
+/*
+--------ESTILO DE CAMPOS DISPONIBLES---------
+*/
+
+.MainCamposDisponibles{
+	min-height: 95vh;
+	background-image: linear-gradient(#f6fff6cc, #cccccc);
+}
+
+
+.SectionTablaCampos{
+	padding: 10%;
+	padding-top: 15%;
+	min-height:60vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.h2Campos{
+		text-align:center;
+
+}
+
+.TablaCampos{
+	border:1px solid #2D882D;
+}
+.CellBorder{
+		border: 1px solid  #2D882D;
+		text-align:center;
+		border-spacing: 0;
+}
+
+
+
+/*----------------------------------------------
+--------DIVISIÓN DEL MAIN Y EL FOOTER-----------
+----------------------------------------------*/
+
+.Footer{
+	background-color: #2D882D;
+	color:#f6fff6;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "PrimeraColumnaF SegundaColumnaF" 
+
+}
+
+
+.ColumnasFooter{
+	
+	text-align: center;
+	display: grid;
+
+	grid-template-rows: 1fr 2fr;
+	grid-template-areas:
+	"TituloColumnaF"
+	"UlFooter";
+
+}
+
+.PrimeraColumnaF{
+	grid-area: PrimeraColumnaF;
+	color:#f6fff6;
+}
+
+.SegundaColumnaF{
+	grid-area: SegundaColumnaF;
+
+}
+
+.TituloColumnaF{
+	grid-area:TituloColumnaF;
+}
+
+.UlFooter{
+	list-style: none;
+	grid-area:UlFooter;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.ItemListaFooter{
+	grid-area:ItemListaFooter;
+}
+
+footer a{
+	color:#f6fff6;
+	text-decoration:none;
+}
+
+footer a:hover{
+	color: #d4ddd4;
+	border: 1px dotted #f6fff6;
+	border-radius: 15px
+}

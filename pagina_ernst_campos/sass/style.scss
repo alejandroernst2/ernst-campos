@@ -1,0 +1,41 @@
+
+body{
+    background-color: #f6fff6;
+    font-family: 'Lato', sans-serif;
+        color: #2D882D;
+}
+
+*{
+/* Esto sería el normalize de los navegadores*/
+
+margin: 0;
+padding: 0;
+font-weight:normal;
+line-height: 2;
+letter-spacing: 2px;
+
+}
+@import "header";
+
+.WhatsappLogo{
+	display: inline;
+    position: sticky;
+    top: 90vh;
+    left: 95vw;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: right;
+    .ImgLogoWpp{
+        height: 5vh;
+        
+    }
+    .ImgLogoWpp:hover{
+             transform:rotatex(20deg);
+    }
+    
+}
+
+@import "Index";
+
+
+@import "footer"

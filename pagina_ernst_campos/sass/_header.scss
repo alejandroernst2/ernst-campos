@@ -1,0 +1,92 @@
+
+header{
+	z-index: 2;
+}
+
+.PosicionHeader{
+	position: fixed;
+	background-color: #f6fff6;
+	text-align: center;
+    .h1LogoImg{
+        max-width: 200px;
+        background-color: #f6fff6;
+    }
+    @media screen and (max-width: 900px){
+        .nav{
+            display: none;
+            width: 100vw;
+            background-color:#2D882D;
+        }
+
+        .navbar-light{
+            background-color: #2D882D;
+            width: 100vw;
+            .navbar-nav{
+                .nav-link{
+                    color: #f6fff6;
+                    .active{
+                        color: #bbbbbb;
+                    }
+
+                }
+                .nav-link:hover{
+                    color: #bbbbbb;
+                }
+
+            }
+            .navbar-brand {
+                color: #f6fff6;
+            }
+            .navbar-brand:hover {
+                color: #cccccc;
+            }
+
+        }
+        
+    
+    }
+
+        
+
+    @media screen and (min-width: 900px){
+        .navbar{
+            display: none;
+            width: 100vw;
+            background-color:#2D882D ;
+        }
+        
+        .UlNav{
+            background-color: #2D882D;
+            width: 100vw;
+            margin: 0;
+            .LiNav{
+                display: inline-block;
+                list-style: none;
+                width: 30vw;
+                .LiNavA:hover{
+                    background-color: #f6fff6;
+                    color: #2D882D;
+                    border: 5px solid  #C13038;
+                    border-radius:2vw;
+                    text-decoration: none;
+                }
+                
+                .LiNavA{
+                    display:block;
+                    border: 5px solid #2D882D;
+                    text-decoration: none;
+                    color: #f6fff6;
+                    /*este display es para que el <a> ocupe todo el <Li>*/
+                }
+
+            }
+        }
+
+    
+    }
+    
+
+
+
+}
+

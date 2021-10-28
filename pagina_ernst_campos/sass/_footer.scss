@@ -1,0 +1,88 @@
+
+
+.Footer{
+	background-color: #2D882D;
+	color:#f6fff6;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "PrimeraColumnaF SegundaColumnaF"; 
+
+    .ColumnasFooter{
+	
+        text-align: center;
+        display: grid;
+    
+        grid-template-rows: (1fr) (2fr);
+        grid-template-areas:
+        "TituloColumnaF"
+        "UlFooter";
+        .TituloColumnaF{
+            grid-area:TituloColumnaF;
+        }
+        .UlFooter{
+            list-style: none;
+            grid-area:UlFooter;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .ItemListaFooter{
+                grid-area:ItemListaFooter;
+            }
+        
+        }
+        
+
+    
+    }
+    .PrimeraColumnaF{
+        grid-area: PrimeraColumnaF;
+        color:#f6fff6;
+    }
+    .SegundaColumnaF{
+        grid-area: SegundaColumnaF;
+    
+    }
+    @media screen and (max-width: 450px) {
+        
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width:100vw;
+            padding-left: 4.5vw;
+            padding-right: 4.5vw;
+            .ColumnasFooter{
+                border-bottom: 1px solid #2D882D;
+                padding-top: 3vh;
+                .TituloColumnaF{
+                    text-align: center;
+                }
+            }
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer a{
+	color:#f6fff6;
+	text-decoration:none;
+}
+
+footer a:hover{
+	color: #d4ddd4;
+	border: 1px dotted #f6fff6;
+	border-radius: 15px;
+}

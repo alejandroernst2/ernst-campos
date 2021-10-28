@@ -1,0 +1,122 @@
+.IndexTopSection{
+	max-height: 100vh;
+	overflow: hidden;
+
+
+
+    .ImagenTopSection{
+        
+
+        margin-bottom: -3vh;
+        min-height: 100vh;
+        min-width: 100%;
+        overflow: cover;
+        
+
+    }
+
+    .TextTopSectionIndex{
+        font-family: 'Bodoni Moda', serif;
+        font-family: 'Newsreader', serif;
+        font-size: 7vh;
+        position: absolute;
+        top: 80vh;
+        left: 8vw;
+        color: #2D882D;
+        background-color: #f6fff6bb;
+        border-radius:20px ;
+        padding: 20px;;
+        
+    }
+    @media screen and (max-width: 450px){
+        .TextTopSectionIndex{
+            font-size: 4vh;
+            top: 85vh;
+            height: auto;
+        }
+    }
+}
+
+.SecondSectionIndex{
+	min-height: 87vh;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	background-image: url(../imagenes/FotoGanado.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+    .ArticleSecSectInd{
+        /*Esta clase corresponde a ambos articles que se 
+        encuentran dentro de la second section del index*/
+        
+        box-sizing: border-box;
+    
+        color:#2D882D;
+        background-color: #f6fff6cc;
+        
+    
+        border-radius: 10px;
+        
+    
+        margin: 7vh;
+        padding: 3vw;
+    
+        min-width: 30rem;
+        max-width: 33rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: max-width .5s;
+        .h2SectionIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+                    text-align:center;
+                font-size: 2rem;
+        
+        }
+        .PSecSectIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align:justify;
+        }
+        
+        
+        
+
+    
+    }
+    @media screen and (max-width: 450px){	
+        .ArticleSecSectInd{
+            min-width: 70%;
+            padding: 5vw;
+            .PSecSectIndex{
+                text-align: center;
+                font-size: 15px;
+                }
+            
+        }
+        
+    
+            
+    }
+    .ArticleSecSectInd:hover{
+
+        max-width: 35rem;
+    
+    }
+    
+
+}
+
+
+
+
+
+
+
+

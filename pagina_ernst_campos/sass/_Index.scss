@@ -31,7 +31,7 @@
     @media screen and (max-width: 450px){
         .TextTopSectionIndex{
             font-size: 4vh;
-            top: 85vh;
+            top: 75vh;
             height: auto;
         }
     }
@@ -52,14 +52,9 @@
         encuentran dentro de la second section del index*/
         
         box-sizing: border-box;
-    
         color:#2D882D;
         background-color: #f6fff6cc;
-        
-    
         border-radius: 10px;
-        
-    
         margin: 7vh;
         padding: 3vw;
     
@@ -74,8 +69,8 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-                    text-align:center;
-                font-size: 2rem;
+            text-align:center;
+            font-size: 2rem;
         
         }
         .PSecSectIndex{
@@ -113,6 +108,77 @@
 
 }
 
+.Sect3--Index{
+    
+    height: 80vh;
+    padding:3rem;
+    background-image: url(../imagenes/alambrado.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+    
+    .Sect3--Div_Titulo{
+        text-align:center;
+        margin: auto;
+        height: 20vh;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5vw;
+        width: 50vw;
+        .Sect3--Div_Titulo_h2{
+            
+            background-color: #f6fff6cc ;
+            color: #2D882D;
+            width: 30vw;
+            margin: auto;
+            border-radius: 15vh;
+            text-align: center;
+            
+            
+
+            
+        }
+       
+    }
+    .Sect3--Div_Map{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        height: 60vh;
+
+        .Div_Map--Mapa{
+            width:40vw;
+            height:40vh;
+            
+           
+           .IframeMapa{
+               width: 40vw;
+               height: 40vh;
+               overflow: scroll;
+           }
+            
+            
+        }
+        .Div_Map--Parrafo{
+            
+            display: flex;
+            width:40vw;
+            height:40vh;
+            padding: 1rem;
+            
+            background-color: #f6fff6bb;
+            text-align: left;
+            
+        }
+        
+    }
+    
+}
 
 
 

@@ -230,12 +230,40 @@ header {
 }
 
 .Sect3--Index {
-  width: 100vw;
   height: 80vh;
   padding: 3rem;
+  background-image: url(../imagenes/alambrado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Sect3--Index .Sect3--Div_Titulo {
+  text-align: center;
+  margin: auto;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vw;
+  width: 50vw;
+}
+
+.Sect3--Index .Sect3--Div_Titulo .Sect3--Div_Titulo_h2 {
+  background-color: #f6fff6cc;
+  color: #2D882D;
+  width: 30vw;
+  margin: auto;
+  border-radius: 15vh;
   text-align: center;
 }
 
@@ -249,6 +277,9 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60vh;
 }
 
 .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa {
@@ -256,20 +287,27 @@ header {
   height: 40vh;
 }
 
+.Sect3--Index .Sect3--Div_Map .Div_Map--Mapa .IframeMapa {
+  width: 40vw;
+  height: 40vh;
+  overflow: scroll;
+}
+
 .Sect3--Index .Sect3--Div_Map .Div_Map--Parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30rem;
-  padding: 1.5rem;
-  margin: 1rem;
-  background-color: #f2fff6;
+  width: 40vw;
+  height: 40vh;
+  padding: 1rem;
+  background-color: #f6fff6bb;
   text-align: left;
 }
 
 .Footer {
   background-color: #2D882D;
   color: #f6fff6;
+  width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

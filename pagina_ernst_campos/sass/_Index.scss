@@ -31,7 +31,7 @@
     @media screen and (max-width: 450px){
         .TextTopSectionIndex{
             font-size: 4vh;
-            top: 75vh;
+            top: 70vh;
             height: auto;
         }
     }
@@ -115,6 +115,7 @@
     background-image: url(../imagenes/alambrado.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+
     
     
     
@@ -142,8 +143,15 @@
 
             
         }
-       
+        
+            
+            
+            
+            
+
+            
     }
+       
     .Sect3--Div_Map{
         display: flex;
         flex-direction: row;
@@ -171,18 +179,16 @@
             height:40vh;
             padding: 1rem;
             
-            background-color: #f6fff6bb;
+            background-color: #f6fff6cb;
             text-align: left;
             
         }
         
     }
     
+
+
+
 }
-
-
-
-
-
 
 

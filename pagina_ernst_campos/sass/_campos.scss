@@ -1,0 +1,67 @@
+
+.Campos--Productos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding: 7vh;
+	
+	.Div--Producto{
+		display: flex;
+		flex-flow: column nowrap;
+		width: 10rem;
+		height: 15rem;
+		border: 1.5px solid #2D882D;
+		background-color: #ffffff;
+		margin: 2.5vw;
+		padding: .5rem;
+		justify-content: center;
+		.Div--Producto_Img{
+			width: 9rem;
+			height: 9rem;
+			overflow: hidden;
+			margin:auto;
+			opacity: .9;
+			
+			.Div--Producto_Img_{
+			width: 9rem;
+			overflow: hidden;
+			}	
+		}
+		.Div--Producto_Img:hover{
+			opacity: 1;
+		}
+		.Div--Producto_Name{
+			margin:auto;
+			font-size: 20px;
+		}
+		.Div--Producto_Desc{
+			margin:auto;
+		}
+		.Div--Producto_But{
+			width: 7rem;
+			margin: auto;
+			border:1px solid  #2D882D;
+			background-color: #2D882D;
+			color:#f6fff6;
+			.Div--Producto_But_A{
+				color: inherit;
+				text-decoration: none;
+			}
+			
+		}
+		
+		.Div--Producto_But:hover{
+			border:1px solid  #003200;
+			background-color: #003200;
+		}	
+
+
+	}
+
+}
+
+
+
+
+

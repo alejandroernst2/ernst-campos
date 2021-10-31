@@ -100,7 +100,7 @@ header {
 }
 
 .WhatsappLogo .ImgLogoWpp {
-  height: 5vh;
+  height: 6vh;
 }
 
 .WhatsappLogo .ImgLogoWpp:hover {
@@ -136,7 +136,7 @@ header {
 @media screen and (max-width: 450px) {
   .IndexTopSection .TextTopSectionIndex {
     font-size: 4vh;
-    top: 75vh;
+    top: 70vh;
     height: auto;
   }
 }
@@ -230,12 +230,40 @@ header {
 }
 
 .Sect3--Index {
-  width: 100vw;
   height: 80vh;
   padding: 3rem;
+  background-image: url(../imagenes/alambrado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Sect3--Index .Sect3--Div_Titulo {
+  text-align: center;
+  margin: auto;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vw;
+  width: 50vw;
+}
+
+.Sect3--Index .Sect3--Div_Titulo .Sect3--Div_Titulo_h2 {
+  background-color: #f6fff6cc;
+  color: #2D882D;
+  width: 30vw;
+  margin: auto;
+  border-radius: 15vh;
   text-align: center;
 }
 
@@ -249,6 +277,9 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60vh;
 }
 
 .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa {
@@ -256,24 +287,128 @@ header {
   height: 40vh;
 }
 
+.Sect3--Index .Sect3--Div_Map .Div_Map--Mapa .IframeMapa {
+  width: 40vw;
+  height: 40vh;
+  overflow: scroll;
+}
+
 .Sect3--Index .Sect3--Div_Map .Div_Map--Parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30rem;
-  padding: 1.5rem;
-  margin: 1rem;
-  background-color: #f2fff6;
+  width: 40vw;
+  height: 40vh;
+  padding: 1rem;
+  background-color: #f6fff6cb;
   text-align: left;
+}
+
+.Campos--Productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 7vh;
+}
+
+.Campos--Productos .Div--Producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 10rem;
+  height: 15rem;
+  border: 1.5px solid #2D882D;
+  background-color: #ffffff;
+  margin: 2.5vw;
+  padding: .5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_Img {
+  width: 9rem;
+  height: 9rem;
+  overflow: hidden;
+  margin: auto;
+  opacity: .9;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
+  width: 9rem;
+  overflow: hidden;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_Img:hover {
+  opacity: 1;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_Name {
+  margin: auto;
+  font-size: 20px;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_Desc {
+  margin: auto;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_But {
+  width: 7rem;
+  margin: auto;
+  border: 1px solid  #2D882D;
+  background-color: #2D882D;
+  color: #f6fff6;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_But:hover {
+  border: 1px solid  #003200;
+  background-color: #003200;
+}
+
+.proximamente--Sect {
+  padding: 10vw;
+  min-height: 70vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+.proximamente--Sect .prox--Titulo {
+  font-size: 10vh;
+  display: block;
+  text-align: center;
+}
+
+.proximamente--Sect .prox--Parrafo {
+  font-size: 5vh;
+  display: block;
+  text-align: center;
 }
 
 .Footer {
   background-color: #2D882D;
   color: #f6fff6;
+  width: 100vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: "PrimeraColumnaF SegundaColumnaF";
 }
 
@@ -359,4 +494,3 @@ footer a:hover {
   border: 1px dotted #f6fff6;
   border-radius: 15px;
 }
-/*# sourceMappingURL=style.css.map */

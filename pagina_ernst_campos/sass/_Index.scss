@@ -25,33 +25,34 @@
         color: $Color-DG;
         background-color: #f6fff6bb;
         border-radius:20px ;
-        padding: 20px;;
-        
-    }
-    @media screen and (max-width: 800px){
-        .TextTopSectionIndex{
+        padding: 20px;
+        @media screen and (max-width: 800px){
+    
             font-size: 50px;
             top: 70vh;
             height: auto;
             max-width: 60vw;
         }
-    }
-    @media screen and (max-width: 630px){
-        .TextTopSectionIndex{
+    
+        @media screen and (max-width: 630px){
+        
             font-size: 36px;
             top: 70vh;
             height: auto;
             max-width: 60vw;
+        
         }
-    }
-    @media screen and (max-width: 500px){
-        .TextTopSectionIndex{
-            font-size: 10px;
+        @media screen and (max-width: 500px){
+        
+            font-size: 22px;
             top: 70vh;
             height: auto;
             max-width: 60vw;
+        
         }
+        
     }
+    
 }
 
 .SecondSectionIndex{
@@ -64,6 +65,7 @@
 	background-image: url(../imagenes/FotoGanado.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
+    justify-content: space-evenly;
     .ArticleSecSectInd{
         /*Esta clase corresponde a ambos articles que se 
         encuentran dentro de la second section del index*/
@@ -72,11 +74,15 @@
         color:$Color-DG;
         background-color: #f6fff6cc;
         border-radius: 10px;
-        margin: 7vh;
+        
         padding: 3vw;
     
-        min-width: 30rem;
-        max-width: 33rem;
+        min-width: 25rem;
+        max-width: 28rem;
+        height: 70vh;
+        margin:auto;
+        
+        
     
         display: flex;
         flex-direction: column;
@@ -106,15 +112,21 @@
             justify-content: center;
             text-align:justify;
         }
+        @media  screen and (max-width: 950px) {
+            margin:3vw;
+            height: auto;
+            
+        }
         
         
         
 
     
     }
+    
     @media screen and (max-width: 600px){	
         .ArticleSecSectInd{
-            min-width: 80%;
+            width: 75%;
             padding: 3vw;
             &:hover{
                transform: scale(1);

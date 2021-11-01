@@ -157,7 +157,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .IndexTopSection .TextTopSectionIndex {
-    font-size: 10px;
+    font-size: 22px;
     top: 70vh;
     height: auto;
     max-width: 60vw;
@@ -180,6 +180,9 @@ header {
   background-image: url(../imagenes/FotoGanado.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .SecondSectionIndex .ArticleSecSectInd {
@@ -190,10 +193,11 @@ header {
   color: #2D882D;
   background-color: #f6fff6cc;
   border-radius: 10px;
-  margin: 7vh;
   padding: 3vw;
-  min-width: 30rem;
-  max-width: 33rem;
+  min-width: 25rem;
+  max-width: 28rem;
+  height: 70vh;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,9 +248,16 @@ header {
   text-align: justify;
 }
 
+@media screen and (max-width: 950px) {
+  .SecondSectionIndex .ArticleSecSectInd {
+    margin: 3vw;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .SecondSectionIndex .ArticleSecSectInd {
-    min-width: 80%;
+    width: 75%;
     padding: 3vw;
   }
   .SecondSectionIndex .ArticleSecSectInd:hover {

@@ -5,41 +5,43 @@ header{
 
 .PosicionHeader{
 	position: fixed;
-	background-color: #f6fff6;
+	background-color: $Color-LG;
 	text-align: center;
     .h1LogoImg{
         max-width: 200px;
-        background-color: #f6fff6;
+        background-color: $Color-LG;
     }
     @media screen and (max-width: 900px){
         .nav{
             display: none;
             width: 100vw;
-            background-color:#2D882D;
+            background-color:$Color-DG;
         }
 
         .navbar-light{
-            background-color: #2D882D;
+            background-color: $Color-DG;
             width: 100vw;
             .navbar-nav{
                 .nav-link{
-                    color: #f6fff6;
+                    color: $Color-LG;
+                    &:hover{
+                        color: #bbbbbb;
+                    }
                     .active{
                         color: #bbbbbb;
                     }
 
                 }
-                .nav-link:hover{
-                    color: #bbbbbb;
-                }
+                
 
             }
             .navbar-brand {
-                color: #f6fff6;
+                color: $Color-LG;
+                &:hover {
+                    color: #cccccc;
+                }
             }
-            .navbar-brand:hover {
-                color: #cccccc;
-            }
+           
 
         }
         
@@ -63,13 +65,7 @@ header{
                 display: inline-block;
                 list-style: none;
                 width: 30vw;
-                .LiNavA:hover{
-                    background-color: #f6fff6;
-                    color: #2D882D;
-                    border: 5px solid  #C13038;
-                    border-radius:2vw;
-                    text-decoration: none;
-                }
+                
                 
                 .LiNavA{
                     display:block;
@@ -77,6 +73,13 @@ header{
                     text-decoration: none;
                     color: #f6fff6;
                     /*este display es para que el <a> ocupe todo el <Li>*/
+                    &:hover{
+                        background-color: #f6fff6;
+                        color: #2D882D;
+                        border: 5px solid  #C13038;
+                        border-radius:2vw;
+                        text-decoration: none;
+                    }
                 }
 
             }

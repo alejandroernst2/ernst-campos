@@ -1,8 +1,11 @@
+$Color-LG: #f6fff6;
+$Color-DG:#2D882D;
+
 
 body{
-    background-color: #f6fff6;
+    background-color: $Color-LG;
     font-family: 'Lato', sans-serif;
-        color: #2D882D;
+        color: $Color-DG;
 }
 
 *{
@@ -25,13 +28,16 @@ letter-spacing: 2px;
     padding: 1rem;
     margin: 1rem;
     text-align: right;
+    
     .ImgLogoWpp{
         height: 6vh;
+        &:hover{
+            transform:rotatex(20deg);
+            transition: transform .5s;
+        }
         
     }
-    .ImgLogoWpp:hover{
-             transform:rotatex(20deg);
-    }
+    
     
 }
 

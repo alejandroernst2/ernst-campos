@@ -42,10 +42,10 @@ header {
   .PosicionHeader .navbar-light .navbar-nav .nav-link {
     color: #f6fff6;
   }
-  .PosicionHeader .navbar-light .navbar-nav .nav-link .active {
+  .PosicionHeader .navbar-light .navbar-nav .nav-link:hover {
     color: #bbbbbb;
   }
-  .PosicionHeader .navbar-light .navbar-nav .nav-link:hover {
+  .PosicionHeader .navbar-light .navbar-nav .nav-link .active {
     color: #bbbbbb;
   }
   .PosicionHeader .navbar-light .navbar-brand {
@@ -72,19 +72,19 @@ header {
     list-style: none;
     width: 30vw;
   }
-  .PosicionHeader .UlNav .LiNav .LiNavA:hover {
-    background-color: #f6fff6;
-    color: #2D882D;
-    border: 5px solid  #C13038;
-    border-radius: 2vw;
-    text-decoration: none;
-  }
   .PosicionHeader .UlNav .LiNav .LiNavA {
     display: block;
     border: 5px solid #2D882D;
     text-decoration: none;
     color: #f6fff6;
     /*este display es para que el <a> ocupe todo el <Li>*/
+  }
+  .PosicionHeader .UlNav .LiNav .LiNavA:hover {
+    background-color: #f6fff6;
+    color: #2D882D;
+    border: 5px solid  #C13038;
+    border-radius: 2vw;
+    text-decoration: none;
   }
 }
 
@@ -106,6 +106,10 @@ header {
 .WhatsappLogo .ImgLogoWpp:hover {
   -webkit-transform: rotatex(20deg);
           transform: rotatex(20deg);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .IndexTopSection {
@@ -133,11 +137,30 @@ header {
   padding: 20px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .IndexTopSection .TextTopSectionIndex {
-    font-size: 4vh;
+    font-size: 50px;
     top: 70vh;
     height: auto;
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .IndexTopSection .TextTopSectionIndex {
+    font-size: 36px;
+    top: 70vh;
+    height: auto;
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .IndexTopSection .TextTopSectionIndex {
+    font-size: 10px;
+    top: 70vh;
+    height: auto;
+    max-width: 60vw;
   }
 }
 
@@ -181,8 +204,15 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-transition: max-width .5s;
-  transition: max-width .5s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.SecondSectionIndex .ArticleSecSectInd:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .SecondSectionIndex .ArticleSecSectInd .h2SectionIndex {
@@ -214,19 +244,19 @@ header {
   text-align: justify;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .SecondSectionIndex .ArticleSecSectInd {
-    min-width: 70%;
-    padding: 5vw;
+    min-width: 80%;
+    padding: 3vw;
+  }
+  .SecondSectionIndex .ArticleSecSectInd:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .SecondSectionIndex .ArticleSecSectInd .PSecSectIndex {
     text-align: center;
     font-size: 15px;
   }
-}
-
-.SecondSectionIndex .ArticleSecSectInd:hover {
-  max-width: 35rem;
 }
 
 .Sect3--Index {
@@ -346,13 +376,13 @@ header {
   opacity: .9;
 }
 
+.Campos--Productos .Div--Producto .Div--Producto_Img:hover {
+  opacity: 1;
+}
+
 .Campos--Productos .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
   width: 9rem;
   overflow: hidden;
-}
-
-.Campos--Productos .Div--Producto .Div--Producto_Img:hover {
-  opacity: 1;
 }
 
 .Campos--Productos .Div--Producto .Div--Producto_Name {
@@ -367,19 +397,19 @@ header {
 .Campos--Productos .Div--Producto .Div--Producto_But {
   width: 7rem;
   margin: auto;
-  border: 1px solid  #2D882D;
+  border: 1px solid #2D882D;
   background-color: #2D882D;
   color: #f6fff6;
-}
-
-.Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
-  color: inherit;
-  text-decoration: none;
 }
 
 .Campos--Productos .Div--Producto .Div--Producto_But:hover {
   border: 1px solid  #003200;
   background-color: #003200;
+}
+
+.Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
+  color: inherit;
+  text-decoration: none;
 }
 
 .proximamente--Sect {

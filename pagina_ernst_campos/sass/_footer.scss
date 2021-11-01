@@ -1,8 +1,8 @@
 
 
 .Footer{
-	background-color: #2D882D;
-	color:#f6fff6;
+	background-color: $Color-DG;
+	color:$Color-LG;
     width:100vw;
 
 	display: grid;
@@ -39,7 +39,7 @@
     }
     .PrimeraColumnaF{
         grid-area: PrimeraColumnaF;
-        color:#f6fff6;
+        color:$Color-LG;
     }
     .SegundaColumnaF{
         grid-area: SegundaColumnaF;
@@ -54,7 +54,7 @@
             padding-left: 4.5vw;
             padding-right: 4.5vw;
             .ColumnasFooter{
-                border-bottom: 1px solid #2D882D;
+                border-bottom: 1px solid $Color-DG;
                 padding-top: 3vh;
                 .TituloColumnaF{
                     text-align: center;
@@ -65,25 +65,13 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 footer a{
 	color:#f6fff6;
 	text-decoration:none;
+    &:hover{
+        color: #d4ddd4;
+        border: 1px dotted #f6fff6;
+        border-radius: 15px;
+    }
 }
 
-footer a:hover{
-	color: #d4ddd4;
-	border: 1px dotted #f6fff6;
-	border-radius: 15px;
-}

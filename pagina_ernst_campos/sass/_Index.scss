@@ -22,17 +22,34 @@
         position: absolute;
         top: 80vh;
         left: 8vw;
-        color: #2D882D;
+        color: $Color-DG;
         background-color: #f6fff6bb;
         border-radius:20px ;
         padding: 20px;;
         
     }
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 800px){
         .TextTopSectionIndex{
-            font-size: 4vh;
+            font-size: 50px;
             top: 70vh;
             height: auto;
+            max-width: 60vw;
+        }
+    }
+    @media screen and (max-width: 630px){
+        .TextTopSectionIndex{
+            font-size: 36px;
+            top: 70vh;
+            height: auto;
+            max-width: 60vw;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .TextTopSectionIndex{
+            font-size: 10px;
+            top: 70vh;
+            height: auto;
+            max-width: 60vw;
         }
     }
 }
@@ -52,7 +69,7 @@
         encuentran dentro de la second section del index*/
         
         box-sizing: border-box;
-        color:#2D882D;
+        color:$Color-DG;
         background-color: #f6fff6cc;
         border-radius: 10px;
         margin: 7vh;
@@ -64,7 +81,17 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        transition: max-width .5s;
+        transition: transform .5s;
+
+
+        &:hover{
+
+            
+            transform: scale(1.1);
+        
+        }
+
+
         .h2SectionIndex{
             display: flex;
             flex-direction: row;
@@ -85,27 +112,27 @@
 
     
     }
-    @media screen and (max-width: 450px){	
+    @media screen and (max-width: 600px){	
         .ArticleSecSectInd{
-            min-width: 70%;
-            padding: 5vw;
+            min-width: 80%;
+            padding: 3vw;
+            &:hover{
+               transform: scale(1);
+            }
+             
+            
+            
             .PSecSectIndex{
                 text-align: center;
                 font-size: 15px;
-                }
+          }
             
         }
         
     
             
     }
-    .ArticleSecSectInd:hover{
-
-        max-width: 35rem;
     
-    }
-    
-
 }
 
 .Sect3--Index{
@@ -133,7 +160,7 @@
         .Sect3--Div_Titulo_h2{
             
             background-color: #f6fff6cc ;
-            color: #2D882D;
+            color: $Color-DG;
             width: 30vw;
             margin: auto;
             border-radius: 15vh;

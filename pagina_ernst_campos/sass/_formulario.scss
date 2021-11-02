@@ -1,7 +1,7 @@
 
 .MainContacto{
 	min-height: 80vh;
-	padding-top: 10vh;
+	padding-top: 20vh;
 	background-image: url(../imagenes/background-image_contacto.jpg);
 	background-repeat: no-repeat;
 	background-size:150rem;
@@ -11,10 +11,7 @@
 	
 	.SectionForm{
 		margin: auto;
-		.Form{	
-	
-			
-			
+		.Form{				
 			width: 50rem;
 			padding-bottom: 10vh;
 			.FieldsetContacto{
@@ -22,6 +19,7 @@
 				background-color: #f6fff6cc;
 				max-width: 50rem;
 				overflow: auto;
+				border-radius: 5px;
 				.FormFieldsetDivContacto{
 	
 					min-height: 70vh;
@@ -52,7 +50,7 @@
 						grid-area:InputEmail;
 						margin:0.2rem;
 						.DivUnputEmail--Input{
-							width: 55vw;
+							width: 101%;
 						}
 						
 						
@@ -95,10 +93,23 @@
 					.DivInputButtons{
 						grid-area:InputButtons;
 						margin:0.2rem;
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-evenly;
+						.DivInputButtons-bt{
+							background-color: $Color-DG;
+							border:1px solid $Color-DG;
+							color: $Color-LG;
+							width: 20vw;
+							border-radius: 5px;
+							:hover{
+								color: $Color-DG;
+								background-color: $Color-LG;
+								border:1px solid $Color-LG;
+							}
+						}
 					}
-					.DivInputButtons:hover{
-						color: palevioletred;
-					}
+					
 					
 					
 					

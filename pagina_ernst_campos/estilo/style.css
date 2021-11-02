@@ -27,6 +27,15 @@ header {
 .PosicionHeader .h1LogoImg {
   max-width: 200px;
   background-color: #f6fff6;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.PosicionHeader .h1LogoImg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 900px) {
@@ -76,14 +85,16 @@ header {
     display: block;
     border: 5px solid #2D882D;
     text-decoration: none;
+    border-radius: 2vw;
     color: #f6fff6;
+    -webkit-transition: hover 2s;
+    transition: hover 2s;
     /*este display es para que el <a> ocupe todo el <Li>*/
   }
   .PosicionHeader .UlNav .LiNav .LiNavA:hover {
     background-color: #f6fff6;
     color: #2D882D;
     border: 5px solid  #C13038;
-    border-radius: 2vw;
     text-decoration: none;
   }
 }
@@ -279,9 +290,11 @@ header {
 }
 
 .Sect3--Index .Sect3--Div_Titulo {
-  text-align: center;
   margin: auto;
-  height: 20vh;
+  text-align: center;
+  height: 10vh;
+  width: 40vh;
+  margin-bottom: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,16 +308,24 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5vw;
   width: 50vw;
+  border-radius: 15px;
+  background-color: #f6fff6cc;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.Sect3--Index .Sect3--Div_Titulo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .Sect3--Index .Sect3--Div_Titulo .Sect3--Div_Titulo_h2 {
-  background-color: #f6fff6cc;
   color: #2D882D;
   width: 30vw;
   margin: auto;
-  border-radius: 15vh;
   text-align: center;
 }
 
@@ -343,9 +364,11 @@ header {
   padding: 1rem;
   background-color: #f6fff6cb;
   text-align: left;
+  border-radius: 15px;
 }
 
 .MainCamposDisponibles {
+  padding-top: 13svh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +482,7 @@ header {
 
 .MainContacto {
   min-height: 80vh;
-  padding-top: 10vh;
+  padding-top: 20vh;
   background-image: url(../imagenes/background-image_contacto.jpg);
   background-repeat: no-repeat;
   background-size: 150rem;
@@ -482,6 +505,7 @@ header {
   background-color: #f6fff6cc;
   max-width: 50rem;
   overflow: auto;
+  border-radius: 5px;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
@@ -517,7 +541,7 @@ header {
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
-  width: 55vw;
+  width: 101%;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre {
@@ -576,10 +600,30 @@ header {
   -ms-grid-column-span: 3;
   grid-area: InputButtons;
   margin: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons:hover {
-  color: palevioletred;
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons .DivInputButtons-bt {
+  background-color: #2D882D;
+  border: 1px solid #2D882D;
+  color: #f6fff6;
+  width: 20vw;
+  border-radius: 5px;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons .DivInputButtons-bt :hover {
+  color: #2D882D;
+  background-color: #f6fff6;
+  border: 1px solid #f6fff6;
 }
 
 .Footer {

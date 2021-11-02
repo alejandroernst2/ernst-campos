@@ -87,8 +87,12 @@ header {
     text-decoration: none;
     border-radius: 2vw;
     color: #f6fff6;
-    -webkit-transition: hover 2s;
-    transition: hover 2s;
+    -webkit-transition: color 2s;
+    transition: color 2s;
+    -webkit-transition: border 2s;
+    transition: border 2s;
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
     /*este display es para que el <a> ocupe todo el <Li>*/
   }
   .PosicionHeader .UlNav .LiNav .LiNavA:hover {
@@ -368,7 +372,7 @@ header {
 }
 
 .MainCamposDisponibles {
-  padding-top: 13svh;
+  padding-top: 13vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,7 +509,7 @@ header {
   background-color: #f6fff6cc;
   max-width: 50rem;
   overflow: auto;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {

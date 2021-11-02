@@ -345,7 +345,7 @@ header {
   text-align: left;
 }
 
-.Campos--Productos {
+.MainCamposDisponibles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,12 +355,27 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  padding: 7vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.Campos--Productos .Div--Producto {
+.MainCamposDisponibles .Campos--Productos {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.MainCamposDisponibles .Campos--Productos .Div--Producto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +394,7 @@ header {
           justify-content: center;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_Img {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img {
   width: 9rem;
   height: 9rem;
   overflow: hidden;
@@ -387,25 +402,25 @@ header {
   opacity: .9;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_Img:hover {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img:hover {
   opacity: 1;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
   width: 9rem;
   overflow: hidden;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_Name {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Name {
   margin: auto;
   font-size: 20px;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_Desc {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Desc {
   margin: auto;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_But {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But {
   width: 7rem;
   margin: auto;
   border: 1px solid #2D882D;
@@ -413,12 +428,12 @@ header {
   color: #f6fff6;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_But:hover {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But:hover {
   border: 1px solid  #003200;
   background-color: #003200;
 }
 
-.Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
+.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
   color: inherit;
   text-decoration: none;
 }
@@ -440,6 +455,131 @@ header {
   font-size: 5vh;
   display: block;
   text-align: center;
+}
+
+.MainContacto {
+  min-height: 80vh;
+  padding-top: 10vh;
+  background-image: url(../imagenes/background-image_contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: 150rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.MainContacto .SectionForm {
+  margin: auto;
+}
+
+.MainContacto .SectionForm .Form {
+  width: 50rem;
+  padding-bottom: 10vh;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto {
+  border-color: #58AB2B;
+  background-color: #f6fff6cc;
+  max-width: 50rem;
+  overflow: auto;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
+  min-height: 70vh;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr  0.5fr 2fr 0.5fr 0.5fr;
+      grid-template-rows: 1fr 1fr 1fr  0.5fr 2fr 0.5fr 0.5fr;
+      grid-template-areas: "TituloFormulario TituloFormulario TituloFormulario" "InputEmail InputEmail InputEmail" "InputNombre InputApellido InputTelefono" "InputProvincia InputProvincia InputProvincia" "InputComentarios InputComentarios InputComentarios" "InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones" "InputButtons InputButtons InputButtons";
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivTituloFormulario {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: TituloFormulario;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivTituloFormulario .TituloFormulario {
+  text-align: center;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: InputEmail;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+  width: 55vw;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: InputNombre;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: InputApellido;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: InputTelefono;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputProvincia {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: InputProvincia;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: InputComentarios;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .InputComentarios {
+  width: 90%;
+  min-height: 15vh;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTerminosYCondiciones {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: InputTerminosYCondiciones;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: InputButtons;
+  margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons:hover {
+  color: palevioletred;
 }
 
 .Footer {

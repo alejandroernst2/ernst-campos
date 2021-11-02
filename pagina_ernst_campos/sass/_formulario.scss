@@ -1,0 +1,119 @@
+
+.MainContacto{
+	min-height: 80vh;
+	padding-top: 10vh;
+	background-image: url(../imagenes/background-image_contacto.jpg);
+	background-repeat: no-repeat;
+	background-size:150rem;
+	display: flex;
+	
+	
+	
+	.SectionForm{
+		margin: auto;
+		.Form{	
+	
+			
+			
+			width: 50rem;
+			padding-bottom: 10vh;
+			.FieldsetContacto{
+				border-color: #58AB2B;
+				background-color: #f6fff6cc;
+				max-width: 50rem;
+				overflow: auto;
+				.FormFieldsetDivContacto{
+	
+					min-height: 70vh;
+					
+					padding: 3rem;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr ;
+					grid-template-rows:1fr 1fr 1fr  0.5fr 2fr 0.5fr 0.5fr;
+					grid-template-areas: 
+					"TituloFormulario TituloFormulario TituloFormulario"
+					"InputEmail InputEmail InputEmail"
+					"InputNombre InputApellido InputTelefono"
+					"InputProvincia InputProvincia InputProvincia"
+					"InputComentarios InputComentarios InputComentarios"
+					"InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones"
+					"InputButtons InputButtons InputButtons" ;
+					.DivTituloFormulario{
+						grid-area:TituloFormulario;
+						margin:0.2rem;
+						.TituloFormulario{
+							text-align: center;
+						}
+					
+					}
+					
+					
+					.DivInputEmail{
+						grid-area:InputEmail;
+						margin:0.2rem;
+						.DivUnputEmail--Input{
+							width: 55vw;
+						}
+						
+						
+					}
+					
+					.DivInputNombre{
+						grid-area:InputNombre;
+						margin:0.2rem;
+					}
+					
+					.DivInputApellido{
+						grid-area:InputApellido;
+						margin:0.2rem;
+					}
+					
+					.DivInputTelefono{
+						grid-area:InputTelefono;
+						margin:0.2rem;
+					}
+						
+					.DivInputProvincia{
+						grid-area:InputProvincia;
+						margin:0.2rem;
+					}
+					
+					.DivInputComentarios{
+						grid-area:InputComentarios;
+						margin:0.2rem;
+					}
+					.InputComentarios{
+						width: 90%;
+						min-height: 15vh;
+					}
+					
+					.DivInputTerminosYCondiciones{
+						grid-area:InputTerminosYCondiciones;
+						margin:0.2rem;
+					}
+					
+					.DivInputButtons{
+						grid-area:InputButtons;
+						margin:0.2rem;
+					}
+					.DivInputButtons:hover{
+						color: palevioletred;
+					}
+					
+					
+					
+				}
+
+			}
+
+		}
+
+	}
+}
+
+
+
+
+
+
+

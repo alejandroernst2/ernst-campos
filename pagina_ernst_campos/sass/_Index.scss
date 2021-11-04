@@ -79,8 +79,9 @@
     
         min-width: 25rem;
         max-width: 28rem;
-        height: 70vh;
+        height: 80vh;
         margin:auto;
+        overflow: auto;
         
         
     
@@ -149,7 +150,7 @@
 
 .Sect3--Index{
     
-    height: 80vh;
+    min-height: 80vh;
     padding:3rem;
     background-image: url(../imagenes/alambrado.jpg);
     background-repeat: no-repeat;
@@ -162,7 +163,7 @@
         margin:auto;
         text-align:center;
         height: 10vh;
-        width: 40vh;
+        width: 30vh;
         margin-bottom: 5vh;
         display: flex;
         flex-flow: row nowrap;
@@ -191,11 +192,6 @@
 
             
         }
-        
-            
-            
-            
-            
 
             
     }
@@ -205,18 +201,33 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-around;
-        height: 60vh;
+        
         
 
-        .Div_Map--Mapa{
-            width:40vw;
-            height:40vh;
-            
-           
+        .Div_Map--Mapa{  
+            width: 25rem;
+               @media screen and (max-width:935px){
+                     
+                    width: 30rem;   
+               }
+               @media screen and (max-width:550px){
+                     
+                width: 90vw; 
+               }
            .IframeMapa{
-               width: 40vw;
-               height: 40vh;
+               
+               height: 25rem;
                overflow: scroll;
+               border-radius: 15px;
+               width: 25rem;
+               @media screen and (max-width:935px){
+                     
+                    width: 30rem;   
+               }
+               @media screen and (max-width:550px){
+                     
+                width: 90vw;   
+               }
            }
             
             
@@ -224,13 +235,21 @@
         .Div_Map--Parrafo{
             
             display: flex;
-            width:40vw;
-            height:40vh;
+            width:25rem;
+            height:25rem;
             padding: 1rem;
             
             background-color: #f6fff6cb;
             text-align: left;
             border-radius: 15px;
+            @media screen and (max-width:935px){
+                margin-top:2rem;       
+                width: 30rem;   
+            }
+            @media screen and (max-width:550px){
+                     
+                width: 90vw;  
+            }
             
         }
         

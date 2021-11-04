@@ -211,8 +211,9 @@ header {
   padding: 3vw;
   min-width: 25rem;
   max-width: 28rem;
-  height: 70vh;
+  height: 80vh;
   margin: auto;
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +287,7 @@ header {
 }
 
 .Sect3--Index {
-  height: 80vh;
+  min-height: 80vh;
   padding: 3rem;
   background-image: url(../imagenes/alambrado.jpg);
   background-repeat: no-repeat;
@@ -297,7 +298,7 @@ header {
   margin: auto;
   text-align: center;
   height: 10vh;
-  width: 40vh;
+  width: 30vh;
   margin-bottom: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,30 +346,66 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 60vh;
 }
 
 .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa {
-  width: 40vw;
-  height: 40vh;
+  width: 25rem;
+}
+
+@media screen and (max-width: 935px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa {
+    width: 90vw;
+  }
 }
 
 .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa .IframeMapa {
-  width: 40vw;
-  height: 40vh;
+  height: 25rem;
   overflow: scroll;
+  border-radius: 15px;
+  width: 25rem;
+}
+
+@media screen and (max-width: 935px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa .IframeMapa {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Mapa .IframeMapa {
+    width: 90vw;
+  }
 }
 
 .Sect3--Index .Sect3--Div_Map .Div_Map--Parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40vw;
-  height: 40vh;
+  width: 25rem;
+  height: 25rem;
   padding: 1rem;
   background-color: #f6fff6cb;
   text-align: left;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 935px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Parrafo {
+    margin-top: 2rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Sect3--Index .Sect3--Div_Map .Div_Map--Parrafo {
+    width: 90vw;
+  }
 }
 
 .MainCamposDisponibles {
@@ -634,6 +671,8 @@ header {
   background-color: #2D882D;
   color: #f6fff6;
   width: 100vw;
+  padding-top: 5vh;
+  min-height: 30vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;

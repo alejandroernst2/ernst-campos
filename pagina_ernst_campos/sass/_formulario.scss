@@ -14,12 +14,15 @@
 		.Form{				
 			width: 50rem;
 			padding-bottom: 10vh;
+
+			
 			.FieldsetContacto{
 				border-color: #58AB2B;
 				background-color: #f6fff6cc;
 				max-width: 50rem;
 				overflow: auto;
 				border-radius: 15px;
+				
 				.FormFieldsetDivContacto{
 	
 					min-height: 70vh;
@@ -59,16 +62,25 @@
 					.DivInputNombre{
 						grid-area:InputNombre;
 						margin:0.2rem;
+						.DivInputNombre--Input{
+							width: 101%;
+						}
 					}
 					
 					.DivInputApellido{
 						grid-area:InputApellido;
 						margin:0.2rem;
+						.DivInputApellido--Input{
+							width: 101%;
+						}
 					}
 					
 					.DivInputTelefono{
 						grid-area:InputTelefono;
 						margin:0.2rem;
+						.DivInputTelefono--Input{
+							width: 101%;
+						}
 					}
 						
 					.DivInputProvincia{
@@ -80,9 +92,14 @@
 						grid-area:InputComentarios;
 						margin:0.2rem;
 					}
-					.InputComentarios{
+					.DivInputComentarios{
 						width: 90%;
 						min-height: 15vh;
+						
+							.DivInputComentarios--Input{
+								width: 101%;
+							}
+						
 					}
 					
 					.DivInputTerminosYCondiciones{
@@ -116,7 +133,101 @@
 				}
 
 			}
+			@media screen and (max-width: 850px){
+				width: 30rem;
+				.FieldsetContacto{
+					max-width: 30rem;
+					.FormFieldsetDivContacto{
+	
+						min-height: 70vh;
+						
+						padding: 3vh;
+						display:flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						.DivInputEmail{
+							
+							.DivUnputEmail--Input{
+								width: 65%;
+							}
+							
+							
+						}
+						.DivInputNombre{
+							
+							.DivInputNombre--Input{
+								width: 58%;
+							}
+						}
+						
+						.DivInputApellido{
+							.DivInputApellido--Input{
+								width: 58%;
+							}
+						}
+						
+						.DivInputTelefono{
+							.DivInputTelefono--Input{
+								width: 58%;
+							}
+						}
 
+						
+						
+						
+						
+					}
+					
+				}
+			}
+			@media screen and (max-width: 550px){
+				width: 90vw;
+				.FieldsetContacto{
+					max-width: 95vw;
+					.FormFieldsetDivContacto{
+	
+						min-height: 70vh;
+						
+						padding: 2vh;
+						display:flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						.DivInputEmail{
+							
+							.DivUnputEmail--Input{
+								width: 101%;
+							}
+							
+							
+						}
+						.DivInputNombre{
+							
+							.DivInputNombre--Input{
+								width: 101%;
+							}
+						}
+						
+						.DivInputApellido{
+							.DivInputApellido--Input{
+								width: 101%;
+							}
+						}
+						
+						.DivInputTelefono{
+							.DivInputTelefono--Input{
+								width: 101%;
+							}
+						}
+						
+
+						
+						
+						
+						
+					}
+					
+				}
+			}
 		}
 
 	}

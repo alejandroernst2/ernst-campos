@@ -144,7 +144,7 @@ header {
   font-family: 'Newsreader', serif;
   font-size: 7vh;
   position: absolute;
-  top: 80vh;
+  top: 75vh;
   left: 8vw;
   color: #2D882D;
   background-color: #f6fff6bb;
@@ -592,6 +592,10 @@ header {
   margin: 0.2rem;
 }
 
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+  width: 101%;
+}
+
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -599,11 +603,19 @@ header {
   margin: 0.2rem;
 }
 
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+  width: 101%;
+}
+
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: InputTelefono;
   margin: 0.2rem;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+  width: 101%;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputProvincia {
@@ -622,9 +634,13 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .InputComentarios {
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios {
   width: 90%;
   min-height: 15vh;
+}
+
+.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios .DivInputComentarios--Input {
+  width: 101%;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTerminosYCondiciones {
@@ -665,6 +681,74 @@ header {
   color: #2D882D;
   background-color: #f6fff6;
   border: 1px solid #f6fff6;
+}
+
+@media screen and (max-width: 850px) {
+  .MainContacto .SectionForm .Form {
+    width: 30rem;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto {
+    max-width: 30rem;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
+    min-height: 70vh;
+    padding: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+    width: 65%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+    width: 58%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+    width: 58%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .MainContacto .SectionForm .Form {
+    width: 90vw;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto {
+    max-width: 95vw;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
+    min-height: 70vh;
+    padding: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+    width: 101%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+    width: 101%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+    width: 101%;
+  }
+  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+    width: 101%;
+  }
 }
 
 .Footer {

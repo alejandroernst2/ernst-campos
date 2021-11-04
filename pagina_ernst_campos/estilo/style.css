@@ -532,6 +532,18 @@ header {
   display: flex;
 }
 
+@media screen and (max-width: 900px) {
+  .MainContacto {
+    padding-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .MainContacto {
+    padding-top: 30vh;
+  }
+}
+
 .MainContacto .SectionForm {
   margin: auto;
 }

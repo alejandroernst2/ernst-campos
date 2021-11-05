@@ -826,7 +826,6 @@ header {
 
 .Footer {
   min-height: 25vh;
-  padding-top: 3vh;
   background-color: #2D882D;
   color: #f6fff6;
   display: -webkit-box;
@@ -885,16 +884,43 @@ header {
   transition: border 1s;
 }
 
+@media screen and (min-width: 700px) {
+  .Footer .Footer--Columnas .Footer--Columnas_A {
+    width: 90%;
+  }
+}
+
 .Footer .Footer--Columnas .Footer--Columnas_A:hover {
   color: #d4ddd4;
   border: 1px dotted #f6fff6;
   border-radius: 15px;
 }
 
-.Footer .Footer--Last {
+.Footer .Footer--Last, .Footer .Footer--Last-ConMg {
   width: 100vw;
   background-color: #C13038;
   color: white;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 7vh;
+}
+
+.Footer .Footer--Last .Footer-Last_Parrafo, .Footer .Footer--Last-ConMg .Footer-Last_Parrafo {
+  margin: auto;
+}
+
+@media screen and (min-width: 663px) {
+  .Footer .Footer--Last, .Footer .Footer--Last-ConMg {
+    margin-bottom: 25px;
+  }
+}
+
+.Footer .Footer--Last-ConMg {
   margin-top: 50px;
+  margin-bottom: 0;
 }

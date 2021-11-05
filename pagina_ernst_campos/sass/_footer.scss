@@ -1,7 +1,6 @@
 
 .Footer{
     min-height: 25vh;
-    padding-top: 3vh;
     background-color: $Color-DG;
     color: $Color-LG;
     display: flex;
@@ -35,6 +34,10 @@
             border: 1px solid #2a602a;
             border-radius: 15px;
             transition: border 1s;
+            @media screen and (min-width:700px) {
+                width: 90%;
+                
+            }
             &:hover{
                 color: #d4ddd4;
                 border: 1px dotted #f6fff6;
@@ -47,6 +50,26 @@
         background-color:$Color-Red;
         color: white;
         text-align: center;
-        margin-top:50px;
+        align-items: center;
+        display: flex;
+        min-height: 7vh;
+        .Footer-Last_Parrafo{
+            margin: auto;
+        }
+
+        @media screen and (min-width:663px) {
+            margin-bottom: 25px;
+        }
+        
+    
     }
+    .Footer--Last-ConMg{
+    @extend .Footer--Last;
+            margin-top:50px;
+            margin-bottom: 0;
+            
+        
+
+    }
+        
 }

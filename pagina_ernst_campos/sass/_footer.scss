@@ -66,12 +66,42 @@
         
     
     }
+    
     .Footer--Last-ConMg{
-    @extend .Footer--Last;
-            margin-top:50px;
-            margin-bottom: 0;
-           
+    
+        @extend .Footer--Last;
+        margin-top:50px;
+        margin-bottom: 0;
+
+
+
+        @keyframes TEXTO_SLIDE{
+            0%{
+                left: 100vw;
+                
+            }
+            
+            100%{
+                left: -100vw;
+            }
+        }
+        .Footer-Last_Parrafo{
+            animation-name: TEXTO_SLIDE;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-timing-function: linear;
+            
+            position: relative;
+        }
         
+        
+        @media screen and (max-width:600px) {
+            width: 170vw;
+            overflow: hidden;
+            .Footer-Last_Parrafo{
+                width: 100%;
+
+        }
 
     }
         

@@ -1,79 +1,52 @@
 
-
 .Footer{
-	background-color: $Color-DG;
-	color:$Color-LG;
-    width:100vw;
-    padding-top: 5vh;
-    min-height: 30vh;
-
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "PrimeraColumnaF SegundaColumnaF"; 
-
-    .ColumnasFooter{
-	
+    min-height: 25vh;
+    padding-top: 3vh;
+    background-color: $Color-DG;
+    color: $Color-LG;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .Footer--Columnas{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        width: 300px;
+        padding: 5vw;
         text-align: center;
-        display: grid;
-    
-        grid-template-rows: (1fr 2fr);
-        grid-template-areas:
-        "TituloColumnaF"
-        "UlFooter";
-        .TituloColumnaF{
-            grid-area:TituloColumnaF;
-        }
-        .UlFooter{
-            list-style: none;
-            grid-area:UlFooter;
-        
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            .ItemListaFooter{
-                grid-area:ItemListaFooter;
-            }
-        
-        }
-        
-
-    
-    }
-    .PrimeraColumnaF{
-        grid-area: PrimeraColumnaF;
-        color:$Color-LG;
-    }
-    .SegundaColumnaF{
-        grid-area: SegundaColumnaF;
-    
-    }
-    @media screen and (max-width: 450px) {
-        
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            width:100vw;
-            padding-left: 4.5vw;
-            padding-right: 4.5vw;
-            .ColumnasFooter{
-                border-bottom: 1px solid $Color-DG;
-                padding-top: 3vh;
-                .TituloColumnaF{
-                    text-align: center;
-                }
-            }
-        
-        
-    }
-}
-
-footer a{
-	color:#f6fff6;
-	text-decoration:none;
-    &:hover{
-        color: #d4ddd4;
-        border: 1px dotted #f6fff6;
+        background-color: #2a602a;
         border-radius: 15px;
+        @media screen and(max-width:680px){
+            width: 450px;
+            margin-top: 5vh;
+        }
+        @media screen and(max-width:500px){
+            width: 90vw;
+            margin-top: 5vh;
+        }
+        .Footer--Columnas_A{
+            color:#97a897;
+	        text-decoration:none;
+            width: 70%;
+            margin: auto;
+            color: #d4ddd4;
+            border: 1px solid #2a602a;
+            border-radius: 15px;
+            transition: border 1s;
+            &:hover{
+                color: #d4ddd4;
+                border: 1px dotted #f6fff6;
+                border-radius: 15px;
+            }
+        }
+    }
+    .Footer--Last{
+        width:100vw;
+        background-color:$Color-Red;
+        color: white;
+        text-align: center;
+        margin-top:50px;
     }
 }
-

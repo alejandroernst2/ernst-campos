@@ -1,27 +1,36 @@
-.proximamente--Sect{
-    padding: 10vw;
-    min-height: 70vh;
-    padding-top:15vh;
-    padding-bottom:15vh;
-    .prox--Titulo{
-        font-size: 10vh;
-        display: block;
-        text-align: center;
-    }
-    .prox--Parrafo{
-        font-size: 5vh;
-        display: block;
-        text-align: center;
-    }
-    
 
+.Main--Proximamente{
+    display: flex;
+    background-color: white;
+    min-height: 60vh;
+
+    .proximamente--Sect{
+        /*este formato aplica tanto para el archivo proximamente, como para 404 error*/
+        margin:auto;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        padding-top:20vh;
+        padding-bottom:15vh;
+        width: 70%;
+        background-color:$Color-DG;
+        color: $Color-LG;
+        border-radius: 20px;
+        .prox--Titulo{
+            font-size: 2em;
+            display: block;
+            text-align: center;
+        }
+        .prox--Parrafo{
+            font-size: 1em;
+            display: block;
+            text-align: center;
+        }
     
+        
+
+        
+    }
+        
+
+
 }
-    
-
-
-
-
-
-
-

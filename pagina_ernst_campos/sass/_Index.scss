@@ -20,7 +20,7 @@
         font-family: 'Newsreader', serif;
         font-size: 7vh;
         position: absolute;
-        top: 75vh;
+        top: 70vh;
         left: 8vw;
         color: $Color-DG;
         background-color: #f6fff6bb;
@@ -29,7 +29,6 @@
         @media screen and (max-width: 800px){
     
             font-size: 50px;
-            top: 70vh;
             height: auto;
             max-width: 60vw;
         }
@@ -56,12 +55,11 @@
 }
 
 .SecondSectionIndex{
-	min-height: 87vh;	
+	min-height: 80vh;	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
 	background-image: url(../imagenes/FotoGanado.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -74,38 +72,25 @@
         color:$Color-DG;
         background-color: #f6fff6cc;
         border-radius: 10px;
-        
         padding: 3vw;
-    
-        min-width: 25rem;
-        max-width: 28rem;
-        height: 80vh;
+        width: 28rem;
+        height: 60vh;
         margin:auto;
         overflow: auto;
-        
-        
-    
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         transition: transform .5s;
-
-
+        font-size: 13px;
         &:hover{
-
-            
             transform: scale(1.1);
-        
         }
-
-
         .h2SectionIndex{
             display: flex;
             flex-direction: row;
             justify-content: center;
             text-align:center;
             font-size: 2rem;
-        
         }
         .PSecSectIndex{
             display: flex;
@@ -113,11 +98,46 @@
             justify-content: center;
             text-align:justify;
         }
+        @media screen and (max-width:1200px) {
+            
+            height: 50vh;
+            
+        }
         @media  screen and (max-width: 950px) {
             margin:3vw;
             height: auto;
             
+            
         }
+        @media screen and (max-width: 600px){	
+                width: 75%;
+                padding: 3vw;
+                height: auto;
+                
+                &:hover{
+                   transform: scale(1);
+                }
+                 
+                
+                
+                .PSecSectIndex{
+                    text-align: center;
+                    font-size: 15px;
+                }
+
+                
+        }
+        @media screen and (max-width: 400px){	
+            
+            max-width: none;
+            width: 80vw;
+            height: auto;
+            &:hover{
+               transform: scale(1);
+            }            
+            
+            
+    }
         
         
         
@@ -125,72 +145,66 @@
     
     }
     
-    @media screen and (max-width: 600px){	
-        .ArticleSecSectInd{
-            width: 75%;
-            padding: 3vw;
-            &:hover{
-               transform: scale(1);
-            }
-             
-            
-            
-            .PSecSectIndex{
-                text-align: center;
-                font-size: 15px;
-          }
-            
-        }
-        
     
-            
-    }
     
 }
 
 .Sect3--Index{
     
     min-height: 80vh;
-    padding:3rem;
     background-image: url(../imagenes/alambrado.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    padding-top: 5vh;
 
-    
-    
-    
     .Sect3--Div_Titulo{
         margin:auto;
         text-align:center;
         height: 10vh;
-        width: 30vh;
         margin-bottom: 5vh;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        
-        width: 50vw;
         border-radius: 15px;
         background-color: #f6fff6cc ;
-        transition: transform 1s;
+        width: 50vw;
+        transition: transform .5s;
+
         &:hover{
             transform: scale(1.2);
             
         }
 
         .Sect3--Div_Titulo_h2{
-            
-            
             color: $Color-DG;
-            width: 30vw;
+            width: 40vw;
             margin: auto;
-            
             text-align: center;
             
+        }
+        @media screen and (max-width:770px){
+            width: 30rem;   
+            .Sect3--Div_Titulo_h2{
+                width:25rem;
+                
+                
+            }
+       }
+        @media screen and (max-width:500px) {
+            width: 90vw;
             
-
             
+            &:hover{
+                transform: scale(1.05);
+                
+                
+            }
+            .Sect3--Div_Titulo_h2{
+                width:80vw;
+                
+                
+            }
         }
 
             
@@ -207,7 +221,6 @@
         .Div_Map--Mapa{  
             width: 25rem;
                @media screen and (max-width:935px){
-                     
                     width: 30rem;   
                }
                @media screen and (max-width:550px){
@@ -245,9 +258,10 @@
             @media screen and (max-width:935px){
                 margin-top:2rem;       
                 width: 30rem;   
+                height: auto;
             }
             @media screen and (max-width:550px){
-                     
+                height: auto;
                 width: 90vw;  
             }
             

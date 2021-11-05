@@ -54,6 +54,11 @@ header{
     
     }
 
+    @media screen and (max-width: 400px){
+        .navbar-brand{
+            font-size: 13px;
+        }
+    }
         
 
     @media screen and (min-width: 900px){
@@ -86,7 +91,7 @@ header{
                     &:hover{
                         background-color: #f6fff6;
                         color: #2D882D;
-                        border: 5px solid  #C13038;
+                        border: 5px solid  $Color-Red;
                         text-decoration: none;
                     }
                 }

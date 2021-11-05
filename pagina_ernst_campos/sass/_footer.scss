@@ -12,17 +12,20 @@
         display: flex;
         flex-direction:column;
         flex-wrap: nowrap;
-        width: 300px;
+        width: 500px;
         padding: 5vw;
         text-align: center;
         background-color: #2a602a;
         border-radius: 15px;
+        @media screen and(max-width:1100px){
+            width: 300px
+        }
         @media screen and(max-width:680px){
             width: 450px;
             margin-top: 5vh;
         }
         @media screen and(max-width:500px){
-            width: 90vw;
+            width: 80vw;
             margin-top: 5vh;
         }
         .Footer--Columnas_A{
@@ -67,7 +70,7 @@
     @extend .Footer--Last;
             margin-top:50px;
             margin-bottom: 0;
-            
+           
         
 
     }

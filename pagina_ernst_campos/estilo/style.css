@@ -460,14 +460,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .MainCamposDisponibles {
+    padding-top: 17vh;
+  }
 }
 
 .MainCamposDisponibles .Campos--Productos {
@@ -481,12 +482,39 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  width: 90%;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div {
+  width: 20%;
+  height: auto;
+  padding: .5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .MainCamposDisponibles .Campos--Productos .Campos--Productos_Div {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MainCamposDisponibles .Campos--Productos .Campos--Productos_Div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .MainCamposDisponibles .Campos--Productos .Campos--Productos_Div {
+    width: 100%;
+  }
+}
+
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto {
+  padding: .5rem;
+  margin: auto;
+  border: 1.5px solid #2D882D;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,57 +522,75 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  width: 10rem;
-  height: 15rem;
-  border: 1.5px solid #2D882D;
-  background-color: #ffffff;
-  margin: 2.5vw;
-  padding: .5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img {
-  width: 9rem;
-  height: 9rem;
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_Img {
+  width: 90%;
+  height: 50%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: auto;
   opacity: .9;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img:hover {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_Img:hover {
   opacity: 1;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
-  width: 9rem;
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_Img .Div--Producto_Img_ {
+  width: inherit;
   overflow: hidden;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Name {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_Name {
   margin: auto;
-  font-size: 20px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20%;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_Desc {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_Desc {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  height: 10%;
+  font-size: 14px;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_But {
   width: 7rem;
   margin: auto;
   border: 1px solid #2D882D;
   background-color: #2D882D;
   color: #f6fff6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20%;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But:hover {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_But:hover {
   border: 1px solid  #003200;
   background-color: #003200;
 }
 
-.MainCamposDisponibles .Campos--Productos .Div--Producto .Div--Producto_But .Div--Producto_But_A {
+.MainCamposDisponibles .Campos--Productos .Campos--Productos_Div .Div--Producto .Div--Producto_But .Div--Producto_But_A {
   color: inherit;
   text-decoration: none;
 }
@@ -851,11 +897,17 @@ header {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 300px;
+  width: 500px;
   padding: 5vw;
   text-align: center;
   background-color: #2a602a;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .Footer .Footer--Columnas {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -867,7 +919,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .Footer .Footer--Columnas {
-    width: 90vw;
+    width: 80vw;
     margin-top: 5vh;
   }
 }

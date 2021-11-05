@@ -1,9 +1,11 @@
 .MainCamposDisponibles{
 	padding-top: 13vh;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+	@media screen and (max-width:900px) {
+		padding-top: 17vh;
+	}
+
 	
 	
 	.Campos--Productos{
@@ -11,62 +13,101 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		width: 90%;
 		
 		
-		.Div--Producto{
-			display: flex;
-			flex-flow: column nowrap;
-			width: 10rem;
-			height: 15rem;
-			border: 1.5px solid $Color-DG;
-			background-color: #ffffff;
-			margin: 2.5vw;
-			padding: .5rem;
-			justify-content: center;
-			.Div--Producto_Img{
-				width: 9rem;
-				height: 9rem;
-				overflow: hidden;
-				margin:auto;
-				opacity: .9;
-				&:hover{
-					opacity: 1;
-				}
+		
+
+		
+		.Campos--Productos_Div{
+				width: 20%;
+				height: auto;
 				
-				.Div--Producto_Img_{
-				width: 9rem;
-				overflow: hidden;
-				}	
-			}
-			
-			.Div--Producto_Name{
-				margin:auto;
-				font-size: 20px;
-			}
-			.Div--Producto_Desc{
-				margin:auto;
-			}
-			.Div--Producto_But{
-				width: 7rem;
-				margin: auto;
-				border:1px solid  $Color-DG;
-				background-color: $Color-DG;
-				color:$Color-LG;
-				&:hover{
-					border:1px solid  #003200;
-					background-color: #003200;
-				}	
-				.Div--Producto_But_A{
-					color: inherit;
-					text-decoration: none;
-				}
 				
-			}
-			
-			
+				padding: .5rem;
+				padding-bottom:1.5rem;
+
+				@media screen and (max-width:900px) {
+					width: 33.33%;
+					
+				}
+				@media screen and (max-width:600px) {
+					width: 50%;
+				}
+				@media screen and (max-width:450px) {
+					width: 100%;
+				}
+		
+			.Div--Producto{
+				padding: .5rem;
+				margin:auto;
+
+				border: 1.5px solid $Color-DG;
+				background-color: #ffffff;
+
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-around;
+				
+
+				.Div--Producto_Img{
+					width: 90%;
+					height: 50%;
+					overflow: hidden;
+					display: flex;
+					justify-content: space-around;
+					margin:auto;
 
 
+					opacity: .9;
+					&:hover{
+						opacity: 1;
+					}
+					
+					.Div--Producto_Img_{
+					width: inherit;
+					overflow: hidden;
+					}	
+				}
+				
+				.Div--Producto_Name{
+					margin:auto;
+					font-size: 16px;
+					display: flex;
+					justify-content: space-around;
+					height:20% ;
+
+				}
+				.Div--Producto_Desc{
+					margin:auto;
+					display: flex;
+					justify-content: space-around;
+					margin:auto;
+					height:10%;
+					font-size: 14px;
+				}
+				.Div--Producto_But{
+					width: 7rem;
+					margin: auto;
+					border:1px solid  $Color-DG;
+					background-color: $Color-DG;
+					color:$Color-LG;
+					display: flex;
+					justify-content: space-around;
+					height:20% ;
+					&:hover{
+						border:1px solid  #003200;
+						background-color: #003200;
+					}	
+					.Div--Producto_But_A{
+						color: inherit;
+						text-decoration: none;
+					}
+					
+				}
+				
+
+			}
 		}
 
 	}

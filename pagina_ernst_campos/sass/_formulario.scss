@@ -5,7 +5,7 @@
 	background-image: url(../imagenes/background-image_contacto.jpg);
 	background-repeat: no-repeat;
 	background-size:150rem;
-	display: flex;
+	
 	@media screen and (max-width:900px){
 		padding-top: 25vh;
 	}
@@ -17,23 +17,37 @@
 	
 	
 	.SectionForm{
-		margin: auto;
+		display: flex;
+		flex-flow: row nowrap;
+
+
 		.Form{				
-			width: 50rem;
+			margin: auto;
 			padding-bottom: 10vh;
+			display: flex;
+			flex-flow: row nowrap;
+			
 
 			
 			.FieldsetContacto{
 				border-color: #58AB2B;
 				background-color: #f6fff6cc;
-				max-width: 50rem;
 				overflow: auto;
+				margin: auto;
 				border-radius: 15px;
+
+				display: flex;
+				flex-flow: row nowrap;
+
+
+
+				@media screen and (min-width:851px) {
+					max-width:60%;
+				}
 				
 				.FormFieldsetDivContacto{
-	
+					margin: auto;
 					min-height: 70vh;
-					
 					padding: 3rem;
 					display: grid;
 					grid-template-columns: 1fr 1fr 1fr ;

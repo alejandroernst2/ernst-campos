@@ -71,7 +71,7 @@ header {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .PosicionHeader .navbar {
     display: none;
     width: 100vw;
@@ -185,7 +185,7 @@ header {
 }
 
 .SecondSectionIndex {
-  min-height: 80vh;
+  min-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ header {
   border-radius: 10px;
   padding: 3vw;
   width: 28rem;
-  height: 60vh;
+  height: 65vh;
   margin: auto;
   overflow: auto;
   display: -webkit-box;
@@ -271,7 +271,8 @@ header {
 
 @media screen and (max-width: 1200px) {
   .SecondSectionIndex .ArticleSecSectInd {
-    height: 50vh;
+    height: 60vh;
+    margin-top: 5vh;
   }
 }
 
@@ -279,6 +280,7 @@ header {
   .SecondSectionIndex .ArticleSecSectInd {
     margin: 3vw;
     height: auto;
+    margin-top: 5vh;
   }
 }
 
@@ -286,7 +288,6 @@ header {
   .SecondSectionIndex .ArticleSecSectInd {
     width: 75%;
     padding: 3vw;
-    height: auto;
   }
   .SecondSectionIndex .ArticleSecSectInd:hover {
     -webkit-transform: scale(1);
@@ -302,11 +303,16 @@ header {
   .SecondSectionIndex .ArticleSecSectInd {
     max-width: none;
     width: 80vw;
-    height: auto;
   }
   .SecondSectionIndex .ArticleSecSectInd:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media screen and (max: width 950px) {
+  .SecondSectionIndex .ArticleTratectoriaIndex {
+    margin-bottom: 5vh;
   }
 }
 
@@ -628,9 +634,6 @@ header {
   background-image: url(../imagenes/background-image_contacto.jpg);
   background-repeat: no-repeat;
   background-size: 150rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media screen and (max-width: 900px) {
@@ -646,23 +649,50 @@ header {
 }
 
 .MainContacto .SectionForm {
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .MainContacto .SectionForm .Form {
-  width: 50rem;
+  margin: auto;
   padding-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto {
   border-color: #58AB2B;
   background-color: #f6fff6cc;
-  max-width: 50rem;
   overflow: auto;
+  margin: auto;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+@media screen and (min-width: 851px) {
+  .MainContacto .SectionForm .Form .FieldsetContacto {
+    max-width: 60%;
+  }
 }
 
 .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
+  margin: auto;
   min-height: 70vh;
   padding: 3rem;
   display: -ms-grid;
@@ -971,39 +1001,69 @@ header {
   margin-bottom: 0;
 }
 
-@-webkit-keyframes TEXTO_SLIDE {
+@-webkit-keyframes TEXTO_SLIDE_PC {
   0% {
-    position: relative;
     left: 100vw;
   }
   100% {
-    position: relative;
     left: -100vw;
   }
 }
 
-@keyframes TEXTO_SLIDE {
+@keyframes TEXTO_SLIDE_PC {
   0% {
-    position: relative;
     left: 100vw;
   }
   100% {
-    position: relative;
     left: -100vw;
+  }
+}
+
+@-webkit-keyframes TEXTO_SLIDE_MOVILE {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -200vw;
+  }
+}
+
+@keyframes TEXTO_SLIDE_MOVILE {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -200vw;
   }
 }
 
 .Footer .Footer--Last-ConMg .Footer-Last_Parrafo {
-  -webkit-animation-name: TEXTO_SLIDE;
-          animation-name: TEXTO_SLIDE;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .Footer .Footer--Last-ConMg .Footer-Last_Parrafo {
+    -webkit-animation-name: TEXTO_SLIDE_PC;
+            animation-name: TEXTO_SLIDE_PC;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .Footer .Footer--Last-ConMg {
     width: 200vw;
+  }
+  .Footer .Footer--Last-ConMg .Footer-Last_Parrafo {
+    width: 100%;
+    width: inherit;
+    -webkit-animation-name: TEXTO_SLIDE_MOVILE;
+            animation-name: TEXTO_SLIDE_MOVILE;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
 }

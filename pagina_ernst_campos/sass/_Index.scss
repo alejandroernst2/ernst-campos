@@ -2,16 +2,11 @@
 	max-height: 100vh;
 	overflow: hidden;
 
-
-
     .ImagenTopSection{
-        
-
         margin-bottom: -3vh;
         min-height: 100vh;
         min-width: 100%;
         overflow: cover;
-        
 
     }
 
@@ -27,14 +22,12 @@
         border-radius:20px ;
         padding: 20px;
         @media screen and (max-width: 800px){
-    
             font-size: 50px;
             height: auto;
             max-width: 60vw;
         }
     
         @media screen and (max-width: 630px){
-        
             font-size: 36px;
             top: 70vh;
             height: auto;
@@ -42,7 +35,6 @@
         
         }
         @media screen and (max-width: 500px){
-        
             font-size: 22px;
             top: 70vh;
             height: auto;
@@ -55,7 +47,7 @@
 }
 
 .SecondSectionIndex{
-	min-height: 80vh;	
+	min-height: 85vh;	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -74,7 +66,7 @@
         border-radius: 10px;
         padding: 3vw;
         width: 28rem;
-        height: 60vh;
+        height: 65vh;
         margin:auto;
         overflow: auto;
         display: flex;
@@ -99,50 +91,50 @@
             text-align:justify;
         }
         @media screen and (max-width:1200px) {
-            
-            height: 50vh;
+            height: 60vh;
+            margin-top: 5vh;
             
         }
         @media  screen and (max-width: 950px) {
             margin:3vw;
             height: auto;
-            
+            margin-top: 5vh;
             
         }
         @media screen and (max-width: 600px){	
-                width: 75%;
-                padding: 3vw;
-                height: auto;
-                
-                &:hover{
-                   transform: scale(1);
-                }
+            width: 75%;
+            padding: 3vw;              
+            &:hover{
+                transform: scale(1);
+            }
                  
-                
-                
-                .PSecSectIndex{
-                    text-align: center;
-                    font-size: 15px;
-                }
-
-                
+            .PSecSectIndex{
+                text-align: center;
+                font-size: 15px;
+            }
+  
         }
         @media screen and (max-width: 400px){	
             
             max-width: none;
             width: 80vw;
-            height: auto;
             &:hover{
                transform: scale(1);
             }            
             
             
-    }
+        }
         
         
         
 
     
+    }
+    .ArticleTratectoriaIndex{
+       @media screen and (max: width 950px){
+            margin-bottom: 5vh;
+       }
+        
     }
     
     
@@ -150,7 +142,6 @@
 }
 
 .Sect3--Index{
-    
     min-height: 80vh;
     background-image: url(../imagenes/alambrado.jpg);
     background-repeat: no-repeat;
@@ -186,15 +177,12 @@
         @media screen and (max-width:770px){
             width: 30rem;   
             .Sect3--Div_Titulo_h2{
-                width:25rem;
-                
-                
+                width:25rem;     
             }
        }
         @media screen and (max-width:500px) {
             width: 90vw;
-            
-            
+
             &:hover{
                 transform: scale(1.05);
                 

@@ -22,7 +22,10 @@ body {
   0% {
     opacity: 1;
   }
-  50% {
+  45% {
+    opacity: 0;
+  }
+  55% {
     opacity: 0;
   }
   100% {
@@ -34,7 +37,10 @@ body {
   0% {
     opacity: 1;
   }
-  50% {
+  45% {
+    opacity: 0;
+  }
+  55% {
     opacity: 0;
   }
   100% {
@@ -60,8 +66,8 @@ body {
 }
 
 .LogoRepeat .LogoRepeat--Img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 50vw;
+  max-height: 50vw;
   margin: auto;
 }
 

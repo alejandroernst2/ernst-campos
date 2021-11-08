@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*COLOR LIGHT GREEN (CASI BLANCO)*/
+/*COLOR DARK GREEN (NIVEL 1)*/
+/*COLOR DARK GREEN (NIVEL 2)*/
+/*COLOR ROJO INTENSO (Hover del Nav+Footer)*/
 body {
   background-color: #f6fff6;
   font-family: 'Lato', sans-serif;
@@ -12,6 +16,53 @@ body {
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 2px;
+}
+
+@-webkit-keyframes LOGO-REPEAT {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes LOGO-REPEAT {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.LogoRepeat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation-name: LOGO-REPEAT;
+          animation-name: LOGO-REPEAT;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.LogoRepeat .LogoRepeat--Img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
 }
 
 header {
@@ -109,30 +160,7 @@ header {
   }
 }
 
-.WhatsappLogo {
-  display: inline;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 90vh;
-  left: 95vw;
-  padding: 1rem;
-  margin: 1rem;
-  text-align: right;
-}
-
-.WhatsappLogo .ImgLogoWpp {
-  height: 6vh;
-}
-
-.WhatsappLogo .ImgLogoWpp:hover {
-  -webkit-transform: rotatex(20deg);
-          transform: rotatex(20deg);
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-}
-
+/*Esto importa todas las secciones del css, dividio en un scss para cada html, y asi obtener un codigo más facil de encontrar!!*/
 .IndexTopSection {
   max-height: 100vh;
   overflow: hidden;
@@ -674,7 +702,7 @@ header {
   background-color: inherit;
   border: none;
   border-bottom: 1px solid #2D882D;
-  color: #f6fff6;
+  letter-spacing: 0;
 }
 
 .MainContacto .SectionForm .Form .SectionForm-Fieldset {

@@ -1,6 +1,12 @@
+/*COLOR LIGHT GREEN (CASI BLANCO)*/
 $Color-LG: #f6fff6;
+/*COLOR DARK GREEN (NIVEL 1)*/
 $Color-DG:#2D882D;
+/*COLOR DARK GREEN (NIVEL 2)*/
+$Color-DG2:#053505;
+/*COLOR ROJO INTENSO (Hover del Nav+Footer)*/
 $Color-Red:#C13038;
+
 
 
 body{
@@ -19,30 +25,49 @@ line-height: 1.5;
 letter-spacing: 2px;
 
 }
-@import "header";
 
-.WhatsappLogo{
-	display: inline;
-    position: sticky;
-    top: 90vh;
-    left: 95vw;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: right;
-    
-    .ImgLogoWpp{
-        height: 6vh;
-        &:hover{
-            transform:rotatex(20deg);
-            transition: transform .5s;
-        }
-        
+@keyframes LOGO-REPEAT{
+    0%{
+        opacity: 1;
     }
     
+    
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
     
 }
 
 
+.LogoRepeat{
+    display: flex;
+    position: absolute;
+    
+    width: 100vw;
+    height: 100vh;
+
+    
+    animation-name: LOGO-REPEAT;
+    transition-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+
+    .LogoRepeat--Img{
+        max-width: 200px;
+        max-height: 200px;
+        margin: auto;
+    }
+}
+
+
+@import "header";
+
+/*Esto importa todas las secciones del css, dividio en un scss para cada html, y asi obtener un codigo más facil de encontrar!!*/
 @import "Index";
 
 @import "campos";

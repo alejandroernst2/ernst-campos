@@ -310,7 +310,7 @@ header {
   }
 }
 
-@media screen and (max: width 950px) {
+@media screen and (max-width: 950px) {
   .SecondSectionIndex .ArticleTratectoriaIndex {
     margin-bottom: 5vh;
   }
@@ -670,30 +670,19 @@ header {
           flex-flow: row nowrap;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto {
+.MainContacto .SectionForm .Form .Inputs {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #2D882D;
+  color: #f6fff6;
+}
+
+.MainContacto .SectionForm .Form .SectionForm-Fieldset {
   border-color: #58AB2B;
   background-color: #f6fff6cc;
   overflow: auto;
   margin: auto;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-}
-
-@media screen and (min-width: 851px) {
-  .MainContacto .SectionForm .Form .FieldsetContacto {
-    max-width: 60%;
-  }
-}
-
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
-  margin: auto;
-  min-height: 70vh;
   padding: 3rem;
   display: -ms-grid;
   display: grid;
@@ -704,7 +693,13 @@ header {
       grid-template-areas: "TituloFormulario TituloFormulario TituloFormulario" "InputEmail InputEmail InputEmail" "InputNombre InputApellido InputTelefono" "InputProvincia InputProvincia InputProvincia" "InputComentarios InputComentarios InputComentarios" "InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones" "InputButtons InputButtons InputButtons";
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivTituloFormulario {
+@media screen and (min-width: 851px) {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset {
+    max-width: 60%;
+  }
+}
+
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivTituloFormulario {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -712,11 +707,11 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivTituloFormulario .TituloFormulario {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivTituloFormulario .TituloFormulario {
   text-align: center;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputEmail {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -724,44 +719,44 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputEmail .DivUnputEmail--Input {
   width: 101%;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputNombre {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: InputNombre;
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputNombre .DivInputNombre--Input {
   width: 101%;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputApellido {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: InputApellido;
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputApellido .DivInputApellido--Input {
   width: 101%;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputTelefono {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: InputTelefono;
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputTelefono .DivInputTelefono--Input {
   width: 101%;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputProvincia {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputProvincia {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -769,7 +764,7 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputComentarios {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -777,16 +772,17 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputComentarios {
   width: 90%;
   min-height: 15vh;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputComentarios .DivInputComentarios--Input {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputComentarios .DivInputComentarios--Input {
   width: 101%;
+  min-height: 15vh;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTerminosYCondiciones {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputTerminosYCondiciones {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -794,7 +790,7 @@ header {
   margin: 0.2rem;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputButtons {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -812,7 +808,7 @@ header {
           justify-content: space-evenly;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons .DivInputButtons-bt {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputButtons .DivInputButtons-bt {
   background-color: #2D882D;
   border: 1px solid #2D882D;
   color: #f6fff6;
@@ -820,7 +816,7 @@ header {
   border-radius: 5px;
 }
 
-.MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputButtons .DivInputButtons-bt :hover {
+.MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputButtons .DivInputButtons-bt :hover {
   color: #2D882D;
   background-color: #f6fff6;
   border: 1px solid #f6fff6;
@@ -830,10 +826,8 @@ header {
   .MainContacto .SectionForm .Form {
     width: 30rem;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset {
     max-width: 30rem;
-  }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
     min-height: 70vh;
     padding: 3vh;
     display: -webkit-box;
@@ -846,16 +840,16 @@ header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputEmail .DivUnputEmail--Input {
     width: 65%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputNombre .DivInputNombre--Input {
     width: 58%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputApellido .DivInputApellido--Input {
     width: 58%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+  .MainContacto .SectionForm .Form .SectionForm-Fieldset .DivInputTelefono .DivInputTelefono--Input {
     width: 58%;
   }
 }
@@ -866,8 +860,6 @@ header {
   }
   .MainContacto .SectionForm .Form .FieldsetContacto {
     max-width: 95vw;
-  }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto {
     min-height: 70vh;
     padding: 2vh;
     display: -webkit-box;
@@ -880,16 +872,16 @@ header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputEmail .DivUnputEmail--Input {
+  .MainContacto .SectionForm .Form .FieldsetContacto .DivInputEmail .DivUnputEmail--Input {
     width: 101%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputNombre .DivInputNombre--Input {
+  .MainContacto .SectionForm .Form .FieldsetContacto .DivInputNombre .DivInputNombre--Input {
     width: 101%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputApellido .DivInputApellido--Input {
+  .MainContacto .SectionForm .Form .FieldsetContacto .DivInputApellido .DivInputApellido--Input {
     width: 101%;
   }
-  .MainContacto .SectionForm .Form .FieldsetContacto .FormFieldsetDivContacto .DivInputTelefono .DivInputTelefono--Input {
+  .MainContacto .SectionForm .Form .FieldsetContacto .DivInputTelefono .DivInputTelefono--Input {
     width: 101%;
   }
 }

@@ -20,237 +20,227 @@
 		display: flex;
 		flex-flow: row nowrap;
 
+		
+
 
 		.Form{				
 			margin: auto;
 			padding-bottom: 10vh;
 			display: flex;
 			flex-flow: row nowrap;
-			
+			.Inputs{
+				background-color: inherit;
+				border: none;
+				border-bottom: 1px solid $Color-DG;
+				color: $Color-DG2 ;
+			}
 
 			
-			.FieldsetContacto{
+			.SectionForm-Fieldset{
 				border-color: #58AB2B;
 				background-color: #f6fff6cc;
 				overflow: auto;
 				margin: auto;
 				border-radius: 15px;
+				padding: 3rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr ;
+				grid-template-rows:1fr 1fr 1fr  0.5fr 2fr 0.5fr 0.5fr;
+				grid-template-areas: 
+				"TituloFormulario TituloFormulario TituloFormulario"
+				"InputEmail InputEmail InputEmail"
+				"InputNombre InputApellido InputTelefono"
+				"InputProvincia InputProvincia InputProvincia"
+				"InputComentarios InputComentarios InputComentarios"
+				"InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones"
+				"InputButtons InputButtons InputButtons" ;
 
-				display: flex;
-				flex-flow: row nowrap;
-
-
+				
+				
 
 				@media screen and (min-width:851px) {
 					max-width:60%;
 				}
+	
+
 				
-				.FormFieldsetDivContacto{
-					margin: auto;
-					min-height: 70vh;
-					padding: 3rem;
-					display: grid;
-					grid-template-columns: 1fr 1fr 1fr ;
-					grid-template-rows:1fr 1fr 1fr  0.5fr 2fr 0.5fr 0.5fr;
-					grid-template-areas: 
-					"TituloFormulario TituloFormulario TituloFormulario"
-					"InputEmail InputEmail InputEmail"
-					"InputNombre InputApellido InputTelefono"
-					"InputProvincia InputProvincia InputProvincia"
-					"InputComentarios InputComentarios InputComentarios"
-					"InputTerminosYCondiciones InputTerminosYCondiciones InputTerminosYCondiciones"
-					"InputButtons InputButtons InputButtons" ;
-					.DivTituloFormulario{
-						grid-area:TituloFormulario;
-						margin:0.2rem;
-						.TituloFormulario{
-							text-align: center;
+				
+				.DivTituloFormulario{
+					grid-area:TituloFormulario;
+					margin:0.2rem;
+					.TituloFormulario{
+						text-align: center;
+					}
+				
+				}
+					
+				
+				.DivInputEmail{
+					grid-area:InputEmail;
+					margin:0.2rem;
+					.DivUnputEmail--Input{
+						width: 101%;
+					}
+						
+						
+				}
+					
+				.DivInputNombre{
+					grid-area:InputNombre;
+					margin:0.2rem;
+					.DivInputNombre--Input{
+						width: 101%;
+					}
+				}
+				
+				.DivInputApellido{
+					grid-area:InputApellido;
+					margin:0.2rem;
+					.DivInputApellido--Input{
+						width: 101%;
+					}
+				}
+				
+				.DivInputTelefono{
+					grid-area:InputTelefono;
+					margin:0.2rem;
+					.DivInputTelefono--Input{
+						width: 101%;
+					}
+				}
+					
+				.DivInputProvincia{
+					grid-area:InputProvincia;
+					margin:0.2rem;
+				}
+					
+				.DivInputComentarios{
+					grid-area:InputComentarios;
+					margin:0.2rem;
+				}
+				.DivInputComentarios{
+					width: 90%;
+					min-height: 15vh;
+						
+						.DivInputComentarios--Input{
+							width: 101%;
+							min-height: 15vh;
 						}
 					
+				}
+					
+				.DivInputTerminosYCondiciones{
+					grid-area:InputTerminosYCondiciones;
+					margin:0.2rem;
+				}
+					
+				.DivInputButtons{
+					grid-area:InputButtons;
+					margin:0.2rem;
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-evenly;
+					.DivInputButtons-bt{
+						background-color: $Color-DG;
+						border:1px solid $Color-DG;
+						color: $Color-LG;
+						width: 20vw;
+						border-radius: 5px;
+						:hover{
+							color: $Color-DG;
+							background-color: $Color-LG;
+							border:1px solid $Color-LG;
+						}
 					}
+				}
 					
 					
+					
+					
+			}
+
+			
+			@media screen and (max-width: 850px){
+				width: 30rem;
+				.SectionForm-Fieldset{
+					max-width: 30rem;
+					min-height: 70vh;	
+					padding: 3vh;
+					display:flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
 					.DivInputEmail{
-						grid-area:InputEmail;
-						margin:0.2rem;
+						
+						.DivUnputEmail--Input{
+							width: 65%;
+						}
+							
+							
+					}
+					.DivInputNombre{		
+						.DivInputNombre--Input{
+							width: 58%;
+						}
+					}
+						
+					.DivInputApellido{
+						.DivInputApellido--Input{
+							width: 58%;
+						}
+					}
+						
+					.DivInputTelefono{
+						.DivInputTelefono--Input{
+							width: 58%;
+						}
+					}
+
+						
+						
+						
+						
+				}
+					
+				
+			}
+			@media screen and (max-width: 550px){
+				width: 90vw;
+				.FieldsetContacto{
+					max-width: 95vw;
+					min-height: 70vh;	
+					padding: 2vh;
+					display:flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					.DivInputEmail{
+						
 						.DivUnputEmail--Input{
 							width: 101%;
 						}
-						
-						
+							
+							
 					}
-					
 					.DivInputNombre{
-						grid-area:InputNombre;
-						margin:0.2rem;
+						
 						.DivInputNombre--Input{
 							width: 101%;
 						}
 					}
-					
+						
 					.DivInputApellido{
-						grid-area:InputApellido;
-						margin:0.2rem;
 						.DivInputApellido--Input{
 							width: 101%;
 						}
 					}
 					
 					.DivInputTelefono{
-						grid-area:InputTelefono;
-						margin:0.2rem;
 						.DivInputTelefono--Input{
 							width: 101%;
 						}
 					}
-						
-					.DivInputProvincia{
-						grid-area:InputProvincia;
-						margin:0.2rem;
-					}
-					
-					.DivInputComentarios{
-						grid-area:InputComentarios;
-						margin:0.2rem;
-					}
-					.DivInputComentarios{
-						width: 90%;
-						min-height: 15vh;
-						
-							.DivInputComentarios--Input{
-								width: 101%;
-							}
-						
-					}
-					
-					.DivInputTerminosYCondiciones{
-						grid-area:InputTerminosYCondiciones;
-						margin:0.2rem;
-					}
-					
-					.DivInputButtons{
-						grid-area:InputButtons;
-						margin:0.2rem;
-						display: flex;
-						flex-flow: row wrap;
-						justify-content: space-evenly;
-						.DivInputButtons-bt{
-							background-color: $Color-DG;
-							border:1px solid $Color-DG;
-							color: $Color-LG;
-							width: 20vw;
-							border-radius: 5px;
-							:hover{
-								color: $Color-DG;
-								background-color: $Color-LG;
-								border:1px solid $Color-LG;
-							}
-						}
-					}
-					
-					
-					
-					
-				}
-
-			}
-			@media screen and (max-width: 850px){
-				width: 30rem;
-				.FieldsetContacto{
-					max-width: 30rem;
-					.FormFieldsetDivContacto{
-	
-						min-height: 70vh;
-						
-						padding: 3vh;
-						display:flex;
-						flex-direction: column;
-						flex-wrap: nowrap;
-						.DivInputEmail{
-							
-							.DivUnputEmail--Input{
-								width: 65%;
-							}
-							
-							
-						}
-						.DivInputNombre{
-							
-							.DivInputNombre--Input{
-								width: 58%;
-							}
-						}
-						
-						.DivInputApellido{
-							.DivInputApellido--Input{
-								width: 58%;
-							}
-						}
-						
-						.DivInputTelefono{
-							.DivInputTelefono--Input{
-								width: 58%;
-							}
-						}
-
-						
-						
-						
-						
-					}
-					
-				}
-			}
-			@media screen and (max-width: 550px){
-				width: 90vw;
-				.FieldsetContacto{
-					max-width: 95vw;
-					.FormFieldsetDivContacto{
-	
-						min-height: 70vh;
-						
-						padding: 2vh;
-						display:flex;
-						flex-direction: column;
-						flex-wrap: nowrap;
-						.DivInputEmail{
-							
-							.DivUnputEmail--Input{
-								width: 101%;
-							}
-							
-							
-						}
-						.DivInputNombre{
-							
-							.DivInputNombre--Input{
-								width: 101%;
-							}
-						}
-						
-						.DivInputApellido{
-							.DivInputApellido--Input{
-								width: 101%;
-							}
-						}
-						
-						.DivInputTelefono{
-							.DivInputTelefono--Input{
-								width: 101%;
-							}
-						}
-						
-
-						
-						
-						
-						
-					}
-					
 				}
 			}
 		}
-
 	}
 }
 
